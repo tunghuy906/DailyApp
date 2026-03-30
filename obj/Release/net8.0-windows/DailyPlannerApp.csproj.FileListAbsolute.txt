@@ -12,3 +12,4 @@ E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\refint\DailyPlannerApp.dl
 E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\DailyPlannerApp.pdb
 E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\DailyPlannerApp.genruntimeconfig.cache
 E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\ref\DailyPlannerApp.dll
+E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\DailyPlannerApp.sourcelink.json

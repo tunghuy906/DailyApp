@@ -1,0 +1,6883 @@
+[
+  {
+    "stt": 1,
+    "word": "accountant",
+    "meaning": "kế toán",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 2,
+    "word": "actor / actress",
+    "meaning": "diễn viên",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 3,
+    "word": "artist",
+    "meaning": "nghệ sĩ",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 4,
+    "word": "astronaut",
+    "meaning": "phi hành gia",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 5,
+    "word": "baker",
+    "meaning": "thợ nướng bánh",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 6,
+    "word": "butcher",
+    "meaning": "người mổ thịt",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 7,
+    "word": "cashier",
+    "meaning": "nhân viên thu ngân",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 8,
+    "word": "chef",
+    "meaning": "đầu bếp",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 9,
+    "word": "comedian",
+    "meaning": "diễn viên hài",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 10,
+    "word": "delivery man",
+    "meaning": "nhân viên giao hàng",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 11,
+    "word": "doctor",
+    "meaning": "bác sĩ",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 12,
+    "word": "entrepreneur",
+    "meaning": "nhà kinh doanh",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 13,
+    "word": "engineer",
+    "meaning": "kỹ sư",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 14,
+    "word": "factory worker",
+    "meaning": "công nhân nhà máy",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 15,
+    "word": "office worker",
+    "meaning": "nhân viên văn phòng",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 16,
+    "word": "florist",
+    "meaning": "người bán hoa",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 17,
+    "word": "hairdresser",
+    "meaning": "thợ cắt tóc",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 18,
+    "word": "lawyer",
+    "meaning": "luật sư",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 19,
+    "word": "musician",
+    "meaning": "nhạc sĩ, nhạc công",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 20,
+    "word": "pharmacist",
+    "meaning": "dược sĩ",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 21,
+    "word": "plumber",
+    "meaning": "thợ ống nước",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 22,
+    "word": "politician",
+    "meaning": "chính trị gia",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 23,
+    "word": "programmer",
+    "meaning": "lập trình viên",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 24,
+    "word": "real estate agent",
+    "meaning": "người môi giới bất động sản",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 25,
+    "word": "tailor",
+    "meaning": "thợ may",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 26,
+    "word": "taxi driver",
+    "meaning": "tài xế xe taxi",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 27,
+    "word": "teacher",
+    "meaning": "giáo viên",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 28,
+    "word": "receptionist",
+    "meaning": "nhân viên lễ tân, tiếp tân",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 29,
+    "word": "singer",
+    "meaning": "ca sĩ",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 30,
+    "word": "firefighter",
+    "meaning": "lính cứu hỏa",
+    "example": "",
+    "topic": "Job"
+  },
+  {
+    "stt": 31,
+    "word": "apple",
+    "meaning": "quả táo",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 32,
+    "word": "banana",
+    "meaning": "quả chuối",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 33,
+    "word": "pear",
+    "meaning": "quả lê",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 34,
+    "word": "grape",
+    "meaning": "quả nho",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 35,
+    "word": "peach",
+    "meaning": "quả đào",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 36,
+    "word": "orange",
+    "meaning": "quả cam",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 37,
+    "word": "mango",
+    "meaning": "quả xoài",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 38,
+    "word": "coconut",
+    "meaning": "quả dừa",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 39,
+    "word": "pineapple",
+    "meaning": "quả dứa",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 40,
+    "word": "watermelon",
+    "meaning": "dưa hấu",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 41,
+    "word": "durian",
+    "meaning": "sầu riêng",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 42,
+    "word": "lychee",
+    "meaning": "quả vải",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 43,
+    "word": "guava",
+    "meaning": "quả ổi",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 44,
+    "word": "starfruit",
+    "meaning": "quả khế",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 45,
+    "word": "apricot",
+    "meaning": "quả mơ",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 46,
+    "word": "jackfruit",
+    "meaning": "quả mít",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 47,
+    "word": "avocado",
+    "meaning": "quả bơ",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 48,
+    "word": "papaya",
+    "meaning": "quả đu đủ",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 49,
+    "word": "plum",
+    "meaning": "quả mận",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 50,
+    "word": "lemon",
+    "meaning": "chanh vàng",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 51,
+    "word": "kiwi",
+    "meaning": "quả kiwi",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 52,
+    "word": "raspberry",
+    "meaning": "quả mâm xôi",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 53,
+    "word": "blueberry",
+    "meaning": "quả việt quất",
+    "example": "",
+    "topic": "Fruit"
+  },
+  {
+    "stt": 54,
+    "word": "family",
+    "meaning": "gia đình",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 55,
+    "word": "mother",
+    "meaning": "mẹ",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 56,
+    "word": "father",
+    "meaning": "bố, cha",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 57,
+    "word": "parent",
+    "meaning": "bố hoặc mẹ",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 58,
+    "word": "daughter",
+    "meaning": "con gái",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 59,
+    "word": "son",
+    "meaning": "con trai",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 60,
+    "word": "sibling",
+    "meaning": "anh chị em ruột",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 61,
+    "word": "sister",
+    "meaning": "chị, em gái",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 62,
+    "word": "brother",
+    "meaning": "anh, em trai",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 63,
+    "word": "grandmother",
+    "meaning": "bà nội (ngoại)",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 64,
+    "word": "grandfather",
+    "meaning": "ông nội (ngoại)",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 65,
+    "word": "grandparent",
+    "meaning": "ông hoặc bà",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 66,
+    "word": "relative",
+    "meaning": "họ hàng",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 67,
+    "word": "aunt",
+    "meaning": "cô, dì",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 68,
+    "word": "uncle",
+    "meaning": "chú, bác, cậu, dượng",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 69,
+    "word": "cousin",
+    "meaning": "anh em họ",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 70,
+    "word": "nephew",
+    "meaning": "cháu trai",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 71,
+    "word": "niece",
+    "meaning": "cháu gái",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 72,
+    "word": "wife",
+    "meaning": "vợ",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 73,
+    "word": "husband",
+    "meaning": "chồng",
+    "example": "",
+    "topic": "Family"
+  },
+  {
+    "stt": 74,
+    "word": "mouse",
+    "meaning": "con chuột",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 75,
+    "word": "cat",
+    "meaning": "con mèo",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 76,
+    "word": "dog",
+    "meaning": "con chó",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 77,
+    "word": "kitten",
+    "meaning": "mèo con",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 78,
+    "word": "puppy",
+    "meaning": "chó con",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 79,
+    "word": "pig",
+    "meaning": "con lợn, heo",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 80,
+    "word": "chicken",
+    "meaning": "con gà",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 81,
+    "word": "duck",
+    "meaning": "con vịt",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 82,
+    "word": "goose",
+    "meaning": "con ngỗng",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 83,
+    "word": "turkey",
+    "meaning": "con gà tây",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 84,
+    "word": "stork",
+    "meaning": "con cò",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 85,
+    "word": "swan",
+    "meaning": "thiên nga",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 86,
+    "word": "rabbit",
+    "meaning": "con thỏ",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 87,
+    "word": "cow",
+    "meaning": "con bò",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 88,
+    "word": "buffalo",
+    "meaning": "con trâu",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 89,
+    "word": "horse",
+    "meaning": "con ngựa",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 90,
+    "word": "goat",
+    "meaning": "con dê",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 91,
+    "word": "sheep",
+    "meaning": "con cừu",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 92,
+    "word": "fish",
+    "meaning": "con cá",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 93,
+    "word": "goldfish",
+    "meaning": "cá vàng",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 94,
+    "word": "crab",
+    "meaning": "con cua",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 95,
+    "word": "shrimp",
+    "meaning": "con tôm",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 96,
+    "word": "squid",
+    "meaning": "con mực",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 97,
+    "word": "octopus",
+    "meaning": "con bạch tuộc",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 98,
+    "word": "shark",
+    "meaning": "cá mập",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 99,
+    "word": "dolphin",
+    "meaning": "cá heo",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 100,
+    "word": "turtle",
+    "meaning": "con rùa",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 101,
+    "word": "monkey",
+    "meaning": "con khỉ",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 102,
+    "word": "tiger",
+    "meaning": "con hổ",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 103,
+    "word": "lion",
+    "meaning": "con sư tử",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 104,
+    "word": "leopard",
+    "meaning": "con báo",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 105,
+    "word": "elephant",
+    "meaning": "con voi",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 106,
+    "word": "giraffe",
+    "meaning": "hươu cao cổ",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 107,
+    "word": "deer",
+    "meaning": "con hươu, nai",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 108,
+    "word": "hippo",
+    "meaning": "con hà mã",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 109,
+    "word": "rhino",
+    "meaning": "con tê giác",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 110,
+    "word": "hedgehog",
+    "meaning": "con nhím",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 111,
+    "word": "squirrel",
+    "meaning": "con sóc",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 112,
+    "word": "otter",
+    "meaning": "rái cá",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 113,
+    "word": "kangaroo",
+    "meaning": "chuột túi",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 114,
+    "word": "hamster",
+    "meaning": "chuột đồng",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 115,
+    "word": "fox",
+    "meaning": "con cáo",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 116,
+    "word": "wolf",
+    "meaning": "con sói",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 117,
+    "word": "bear",
+    "meaning": "con gấu",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 118,
+    "word": "panda",
+    "meaning": "con gấu trúc",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 119,
+    "word": "ostrich",
+    "meaning": "đà điểu",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 120,
+    "word": "bee",
+    "meaning": "ong",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 121,
+    "word": "butterfly",
+    "meaning": "bướm",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 122,
+    "word": "worm",
+    "meaning": "con sâu",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 123,
+    "word": "earthworm",
+    "meaning": "con giun",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 124,
+    "word": "eagle",
+    "meaning": "đại bàng",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 125,
+    "word": "owl",
+    "meaning": "con cú",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 126,
+    "word": "parrot",
+    "meaning": "con vẹt",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 127,
+    "word": "peacock",
+    "meaning": "con công",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 128,
+    "word": "dove",
+    "meaning": "chim bồ câu",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 129,
+    "word": "flamingo",
+    "meaning": "chim hồng hạc",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 130,
+    "word": "crow",
+    "meaning": "con quạ",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 131,
+    "word": "hawk",
+    "meaning": "chim diều hâu",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 132,
+    "word": "penguin",
+    "meaning": "chim cánh cụt",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 133,
+    "word": "sparrow",
+    "meaning": "chim sẻ",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 134,
+    "word": "swallow",
+    "meaning": "chim nhạn, én",
+    "example": "",
+    "topic": "Animal"
+  },
+  {
+    "stt": 135,
+    "word": "white",
+    "meaning": "màu trắng",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 136,
+    "word": "black",
+    "meaning": "màu đen",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 137,
+    "word": "red",
+    "meaning": "màu đỏ",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 138,
+    "word": "orange",
+    "meaning": "màu cam",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 139,
+    "word": "yellow",
+    "meaning": "màu vàng",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 140,
+    "word": "green",
+    "meaning": "xanh lá cây",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 141,
+    "word": "blue",
+    "meaning": "màu xanh lam",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 142,
+    "word": "violet",
+    "meaning": "màu tím",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 143,
+    "word": "purple",
+    "meaning": "màu tía",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 144,
+    "word": "beige",
+    "meaning": "màu be",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 145,
+    "word": "pink",
+    "meaning": "màu hồng",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 146,
+    "word": "gray",
+    "meaning": "màu xám",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 147,
+    "word": "brown",
+    "meaning": "màu nâu",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 148,
+    "word": "silver",
+    "meaning": "màu bạc",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 149,
+    "word": "indigo",
+    "meaning": "màu chàm",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 150,
+    "word": "navy blue",
+    "meaning": "màu xanh tím than",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 151,
+    "word": "ivory",
+    "meaning": "màu trắng ngà",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 152,
+    "word": "coral",
+    "meaning": "màu hồng san hô",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 153,
+    "word": "teal",
+    "meaning": "màu xanh mòng két",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 154,
+    "word": "blond",
+    "meaning": "vàng hoe",
+    "example": "",
+    "topic": "Color"
+  },
+  {
+    "stt": 155,
+    "word": "head",
+    "meaning": "đầu",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 156,
+    "word": "hair",
+    "meaning": "tóc",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 157,
+    "word": "face",
+    "meaning": "gương mặt",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 158,
+    "word": "forehead",
+    "meaning": "trán",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 159,
+    "word": "eyebrow",
+    "meaning": "lông mày",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 160,
+    "word": "eye",
+    "meaning": "mắt",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 161,
+    "word": "eyelash",
+    "meaning": "lông mi",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 162,
+    "word": "nose",
+    "meaning": "mũi",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 163,
+    "word": "ear",
+    "meaning": "tai",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 164,
+    "word": "cheek",
+    "meaning": "má",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 165,
+    "word": "beard",
+    "meaning": "râu",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 166,
+    "word": "mouth",
+    "meaning": "miệng",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 167,
+    "word": "lip",
+    "meaning": "môi",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 168,
+    "word": "tooth",
+    "meaning": "răng",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 169,
+    "word": "gum",
+    "meaning": "nướu, lợi",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 170,
+    "word": "jaw",
+    "meaning": "hàm, quai hàm",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 171,
+    "word": "chin",
+    "meaning": "cằm",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 172,
+    "word": "neck",
+    "meaning": "cổ",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 173,
+    "word": "chest",
+    "meaning": "ngực",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 174,
+    "word": "back",
+    "meaning": "lưng",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 175,
+    "word": "belly",
+    "meaning": "bụng",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 176,
+    "word": "hip",
+    "meaning": "hông",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 177,
+    "word": "arm",
+    "meaning": "cánh tay",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 178,
+    "word": "armpit",
+    "meaning": "nách",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 179,
+    "word": "forearm",
+    "meaning": "cẳng tay",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 180,
+    "word": "elbow",
+    "meaning": "khuỷu tay",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 181,
+    "word": "finger",
+    "meaning": "ngón tay",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 182,
+    "word": "knuckle",
+    "meaning": "khớp đốt ngón tay",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 183,
+    "word": "leg",
+    "meaning": "chân",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 184,
+    "word": "knee",
+    "meaning": "đầu gối",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 185,
+    "word": "ankle",
+    "meaning": "mắt cá chân",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 186,
+    "word": "heel",
+    "meaning": "gót chân",
+    "example": "",
+    "topic": "Body Part"
+  },
+  {
+    "stt": 187,
+    "word": "school",
+    "meaning": "trường học",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 188,
+    "word": "class",
+    "meaning": "lớp học",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 189,
+    "word": "student",
+    "meaning": "học sinh, sinh viên",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 190,
+    "word": "pupil",
+    "meaning": "học sinh",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 191,
+    "word": "teacher",
+    "meaning": "giáo viên",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 192,
+    "word": "principal",
+    "meaning": "hiệu trưởng",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 193,
+    "word": "course",
+    "meaning": "khóa học",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 194,
+    "word": "semester",
+    "meaning": "học kì",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 195,
+    "word": "exercise",
+    "meaning": "bài tập",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 196,
+    "word": "homework",
+    "meaning": "bài tập về nhà",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 197,
+    "word": "exam",
+    "meaning": "bài kiểm tra",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 198,
+    "word": "grade",
+    "meaning": "điểm số",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 199,
+    "word": "certificate",
+    "meaning": "bằng cấp, giấy khen",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 200,
+    "word": "kindergarten",
+    "meaning": "lớp mẫu giáo, nhà trẻ",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 201,
+    "word": "primary school",
+    "meaning": "trường tiểu học",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 202,
+    "word": "secondary school",
+    "meaning": "trường trung học",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 203,
+    "word": "high school",
+    "meaning": "trường cấp 3",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 204,
+    "word": "university",
+    "meaning": "trường đại học",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 205,
+    "word": "college",
+    "meaning": "trường đại học, cao đẳng",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 206,
+    "word": "private school",
+    "meaning": "trường tư",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 207,
+    "word": "public school",
+    "meaning": "trường công",
+    "example": "",
+    "topic": "School"
+  },
+  {
+    "stt": 208,
+    "word": "active",
+    "meaning": "năng nổ, lanh lợi",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 209,
+    "word": "alert",
+    "meaning": "tỉnh táo, cảnh giác",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 210,
+    "word": "ambitious",
+    "meaning": "tham vọng",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 211,
+    "word": "attentive",
+    "meaning": "chăm chú, chú tâm",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 212,
+    "word": "bold",
+    "meaning": "táo bạo, mạo hiểm",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 213,
+    "word": "brave",
+    "meaning": "dũng cảm, gan dạ",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 214,
+    "word": "careful",
+    "meaning": "cẩn thận, thận trọng",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 215,
+    "word": "careless",
+    "meaning": "bất cẩn, cẩu thả",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 216,
+    "word": "cautious",
+    "meaning": "thận trọng, cẩn thận",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 217,
+    "word": "conscientious",
+    "meaning": "chu đáo, tỉ mỉ",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 218,
+    "word": "courageous",
+    "meaning": "can đảm",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 219,
+    "word": "crafty",
+    "meaning": "láu cá, xảo quyệt",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 220,
+    "word": "cunning",
+    "meaning": "xảo trá, khôn lỏi",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 221,
+    "word": "deceitful",
+    "meaning": "dối trá",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 222,
+    "word": "decent",
+    "meaning": "lịch sự, tao nhã",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 223,
+    "word": "dependable",
+    "meaning": "đáng tin cậy",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 224,
+    "word": "determined",
+    "meaning": "quyết tâm",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 225,
+    "word": "devoted",
+    "meaning": "hết lòng, tận tâm",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 226,
+    "word": "diligent",
+    "meaning": "siêng năng, cần cù",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 227,
+    "word": "disciplined",
+    "meaning": "có tính kỷ luật",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 228,
+    "word": "dishonest",
+    "meaning": "bất lương, dối trá",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 229,
+    "word": "disloyal",
+    "meaning": "phản trắc, phản bội",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 230,
+    "word": "energetic",
+    "meaning": "giàu năng lượng",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 231,
+    "word": "fair",
+    "meaning": "ngay thẳng",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 232,
+    "word": "faithful",
+    "meaning": "trung thành, chung thủy",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 233,
+    "word": "fearless",
+    "meaning": "bạo dạn",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 234,
+    "word": "forgetful",
+    "meaning": "hay quên",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 235,
+    "word": "hard-headed",
+    "meaning": "cứng đầu, ương ngạnh",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 236,
+    "word": "hardworking",
+    "meaning": "chăm chỉ, chịu khó",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 237,
+    "word": "hardy",
+    "meaning": "táo bạo, gan dạ",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 238,
+    "word": "honest",
+    "meaning": "chân thật, trung thành",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 239,
+    "word": "idle",
+    "meaning": "nhàn rỗi, lười nhác",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 240,
+    "word": "immature",
+    "meaning": "non nớt, thiếu chín chắn",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 241,
+    "word": "impartial",
+    "meaning": "trung lập, ngay thẳng",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 242,
+    "word": "inattentive",
+    "meaning": "lơ đễnh, thiếu tập trung",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 243,
+    "word": "independent",
+    "meaning": "tự lập",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 244,
+    "word": "inert",
+    "meaning": "trì trệ, chậm chạp",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 245,
+    "word": "insightful",
+    "meaning": "sâu sắc, sáng suốt",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 246,
+    "word": "insincere",
+    "meaning": "không thành thực, giả dối",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 247,
+    "word": "irrational",
+    "meaning": "không hợp lý",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 248,
+    "word": "irresponsible",
+    "meaning": "thiếu trách nhiệm",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 249,
+    "word": "lazy",
+    "meaning": "lười biếng",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 250,
+    "word": "level-headed",
+    "meaning": "bình tĩnh, điềm đạm",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 251,
+    "word": "loyal",
+    "meaning": "trung thành, trung kiên",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 252,
+    "word": "mature",
+    "meaning": "trưởng thành, chững chạc",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 253,
+    "word": "methodical",
+    "meaning": "ngăn nắp, cẩn thận",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 254,
+    "word": "naive",
+    "meaning": "ngây thơ",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 255,
+    "word": "objective",
+    "meaning": "khách quan",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 256,
+    "word": "observant",
+    "meaning": "tinh ý, hay quan sát",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 257,
+    "word": "opinionated",
+    "meaning": "cứng đầu, ngoan cố",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 258,
+    "word": "organized",
+    "meaning": "có trật tự, ngăn nắp",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 259,
+    "word": "passive",
+    "meaning": "thụ động",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 260,
+    "word": "perceptive",
+    "meaning": "mẫn cảm, sâu sắc",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 261,
+    "word": "persevering",
+    "meaning": "kiên nhẫn, bền bỉ",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 262,
+    "word": "practical",
+    "meaning": "thực tế, thực tiễn",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 263,
+    "word": "prudent",
+    "meaning": "thận trọng, khôn ngoan",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 264,
+    "word": "quick",
+    "meaning": "nhanh nhẹn",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 265,
+    "word": "rational",
+    "meaning": "có lý trí",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 266,
+    "word": "reasonable",
+    "meaning": "biết điều",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 267,
+    "word": "reckless",
+    "meaning": "liều lĩnh, táo bạo",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 268,
+    "word": "reliable",
+    "meaning": "đáng tin tưởng",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 269,
+    "word": "resolute",
+    "meaning": "cương quyết",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 270,
+    "word": "responsible",
+    "meaning": "có trách nhiệm",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 271,
+    "word": "scrupulous",
+    "meaning": "kĩ lưỡng, tỉ mỉ",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 272,
+    "word": "sensible",
+    "meaning": "khôn ngoan, có óc phán xét",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 273,
+    "word": "shallow",
+    "meaning": "nông cạn",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 274,
+    "word": "shrewd",
+    "meaning": "khôn ngoan",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 275,
+    "word": "sincere",
+    "meaning": "chân thành",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 276,
+    "word": "slow",
+    "meaning": "chậm chạp",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 277,
+    "word": "sluggish",
+    "meaning": "uể oải, lờ đờ",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 278,
+    "word": "sly",
+    "meaning": "ranh mãnh, quỷ quyệt",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 279,
+    "word": "strong",
+    "meaning": "mạnh mẽ, đanh thép",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 280,
+    "word": "strong-minded",
+    "meaning": "cứng cỏi, kiên quyết",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 281,
+    "word": "strong-willed",
+    "meaning": "cứng cỏi",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 282,
+    "word": "stubborn",
+    "meaning": "bướng bỉnh, ngang ngạnh",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 283,
+    "word": "superficial",
+    "meaning": "hời hợt, nông cạn",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 284,
+    "word": "superstitious",
+    "meaning": "mê tín",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 285,
+    "word": "thorough",
+    "meaning": "kỹ lưỡng, thấu đáo",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 286,
+    "word": "timid",
+    "meaning": "rụt rè, bẽn lẽn",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 287,
+    "word": "tough",
+    "meaning": "cứng rắn",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 288,
+    "word": "treacherous",
+    "meaning": "bội bạc",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 289,
+    "word": "trustworthy",
+    "meaning": "đáng tin",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 290,
+    "word": "truthful",
+    "meaning": "thật thà, chân thật",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 291,
+    "word": "unbiased",
+    "meaning": "không thiên vị",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 292,
+    "word": "unpredictable",
+    "meaning": "khó đoán, khôn lường",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 293,
+    "word": "unreasonable",
+    "meaning": "vô lý, quá đáng",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 294,
+    "word": "unreliable",
+    "meaning": "không đáng tin",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 295,
+    "word": "unscrupulous",
+    "meaning": "cẩu thả",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 296,
+    "word": "vigorous",
+    "meaning": "mạnh mẽ, sôi nổi",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 297,
+    "word": "weak",
+    "meaning": "yếu đuối",
+    "example": "",
+    "topic": "Character"
+  },
+  {
+    "stt": 298,
+    "word": "pen",
+    "meaning": "bút mực",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 299,
+    "word": "pencil",
+    "meaning": "bút chì",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 300,
+    "word": "highlighter",
+    "meaning": "bút nhớ",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 301,
+    "word": "ruler",
+    "meaning": "thước kẻ",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 302,
+    "word": "eraser",
+    "meaning": "tẩy, gôm",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 303,
+    "word": "pencil case",
+    "meaning": "hộp bút",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 304,
+    "word": "book",
+    "meaning": "quyển sách",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 305,
+    "word": "notebook",
+    "meaning": "vở",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 306,
+    "word": "paper",
+    "meaning": "giấy",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 307,
+    "word": "scissors",
+    "meaning": "kéo",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 308,
+    "word": "clock",
+    "meaning": "đồng hồ",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 309,
+    "word": "clip",
+    "meaning": "kẹp ghim",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 310,
+    "word": "stapler",
+    "meaning": "cái dập ghim",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 311,
+    "word": "pin",
+    "meaning": "đinh ghim",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 312,
+    "word": "glue",
+    "meaning": "hồ dán",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 313,
+    "word": "sticky tape",
+    "meaning": "băng dính",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 314,
+    "word": "calculator",
+    "meaning": "máy tính bỏ túi",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 315,
+    "word": "desk",
+    "meaning": "bàn học",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 316,
+    "word": "chair",
+    "meaning": "ghế",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 317,
+    "word": "blackboard",
+    "meaning": "bảng đen",
+    "example": "",
+    "topic": "School Object"
+  },
+  {
+    "stt": 318,
+    "word": "forest",
+    "meaning": "rừng",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 319,
+    "word": "rainforest",
+    "meaning": "rừng mưa nhiệt đới",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 320,
+    "word": "mountain",
+    "meaning": "núi, dãy núi",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 321,
+    "word": "highland",
+    "meaning": "cao nguyên",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 322,
+    "word": "hill",
+    "meaning": "đồi",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 323,
+    "word": "valley",
+    "meaning": "thung lũng",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 324,
+    "word": "cave",
+    "meaning": "hang động",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 325,
+    "word": "rock",
+    "meaning": "đá",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 326,
+    "word": "slope",
+    "meaning": "dốc",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 327,
+    "word": "volcano",
+    "meaning": "núi lửa",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 328,
+    "word": "eruption",
+    "meaning": "sự phun trào (núi lửa)",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 329,
+    "word": "waterfall",
+    "meaning": "thác nước",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 330,
+    "word": "canyon",
+    "meaning": "hẻm núi",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 331,
+    "word": "cliff",
+    "meaning": "vách đá",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 332,
+    "word": "bush",
+    "meaning": "bụi cây, bụi rậm",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 333,
+    "word": "desert",
+    "meaning": "sa mạc, hoang mạc",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 334,
+    "word": "oasis",
+    "meaning": "ốc đảo",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 335,
+    "word": "savanna",
+    "meaning": "thảo nguyên",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 336,
+    "word": "sand dune",
+    "meaning": "đụn cát",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 337,
+    "word": "coal",
+    "meaning": "than đá",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 338,
+    "word": "fossil",
+    "meaning": "hóa thạch",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 339,
+    "word": "soil",
+    "meaning": "đất trồng",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 340,
+    "word": "pond",
+    "meaning": "ao nước",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 341,
+    "word": "river",
+    "meaning": "dòng sông",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 342,
+    "word": "riverbank",
+    "meaning": "bờ sông",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 343,
+    "word": "creek",
+    "meaning": "lạch, nhánh sông",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 344,
+    "word": "sea",
+    "meaning": "biển",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 345,
+    "word": "ocean",
+    "meaning": "đại dương",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 346,
+    "word": "reef",
+    "meaning": "rặng đá dưới biển",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 347,
+    "word": "coral reef",
+    "meaning": "rặng san hô",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 348,
+    "word": "beach",
+    "meaning": "bãi biển",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 349,
+    "word": "bay",
+    "meaning": "vịnh",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 350,
+    "word": "seashore",
+    "meaning": "bờ biển",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 351,
+    "word": "meadow",
+    "meaning": "đồng cỏ, bãi cỏ",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 352,
+    "word": "mud",
+    "meaning": "bùn",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 353,
+    "word": "peninsula",
+    "meaning": "bán đảo",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 354,
+    "word": "island",
+    "meaning": "đảo",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 355,
+    "word": "continent",
+    "meaning": "châu lục",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 356,
+    "word": "environment",
+    "meaning": "môi trường",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 357,
+    "word": "planet",
+    "meaning": "hành tinh",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 358,
+    "word": "scenery",
+    "meaning": "phong cảnh, cảnh vật",
+    "example": "",
+    "topic": "Nature"
+  },
+  {
+    "stt": 359,
+    "word": "activity",
+    "meaning": "hoạt động",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 360,
+    "word": "art gallery",
+    "meaning": "phòng trưng bày tranh",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 361,
+    "word": "exhibition",
+    "meaning": "buổi triển lãm",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 362,
+    "word": "museum",
+    "meaning": "bảo tàng",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 363,
+    "word": "concert",
+    "meaning": "buổi hòa nhạc",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 364,
+    "word": "ballet",
+    "meaning": "ba lê, kịch múa",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 365,
+    "word": "opera",
+    "meaning": "nhạc kịch",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 366,
+    "word": "bar",
+    "meaning": "quán rượu",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 367,
+    "word": "pub",
+    "meaning": "nơi phục vụ đồ uống có cồn",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 368,
+    "word": "nightclub",
+    "meaning": "hộp đêm",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 369,
+    "word": "restaurant",
+    "meaning": "nhà hàng ăn uống",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 370,
+    "word": "cafe",
+    "meaning": "quán cà phê",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 371,
+    "word": "film",
+    "meaning": "phim, phim ảnh",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 372,
+    "word": "cinema",
+    "meaning": "rạp chiếu phim",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 373,
+    "word": "theater",
+    "meaning": "nhà hát, rạp hát",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 374,
+    "word": "circus",
+    "meaning": "rạp xiếc",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 375,
+    "word": "cosplay",
+    "meaning": "trò chơi hóa trang",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 376,
+    "word": "stadium",
+    "meaning": "sân vận động",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 377,
+    "word": "zoo",
+    "meaning": "sở thú",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 378,
+    "word": "park",
+    "meaning": "công viên",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 379,
+    "word": "handcraft",
+    "meaning": "nghề thủ công",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 380,
+    "word": "leisure centre",
+    "meaning": "khu vui chơi",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 381,
+    "word": "bowling",
+    "meaning": "bowling",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 382,
+    "word": "monopoly",
+    "meaning": "trò chơi cờ tỷ phú",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 383,
+    "word": "puzzle",
+    "meaning": "trò chơi xếp hình",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 384,
+    "word": "quiz",
+    "meaning": "trò chơi đố vui",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 385,
+    "word": "library",
+    "meaning": "thư viện",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 386,
+    "word": "fishing",
+    "meaning": "câu cá",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 387,
+    "word": "gardening",
+    "meaning": "làm vườn",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 388,
+    "word": "hiking",
+    "meaning": "leo núi",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 389,
+    "word": "reading",
+    "meaning": "đọc sách",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 390,
+    "word": "music",
+    "meaning": "âm nhạc",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 391,
+    "word": "poetry",
+    "meaning": "thơ ca",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 392,
+    "word": "shopping",
+    "meaning": "mua sắm",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 393,
+    "word": "painting",
+    "meaning": "vẽ tranh",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 394,
+    "word": "photography",
+    "meaning": "nhiếp ảnh",
+    "example": "",
+    "topic": "Leisure"
+  },
+  {
+    "stt": 395,
+    "word": "living room",
+    "meaning": "phòng khách",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 396,
+    "word": "dining room",
+    "meaning": "phòng ăn",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 397,
+    "word": "kitchen",
+    "meaning": "nhà bếp",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 398,
+    "word": "bedroom",
+    "meaning": "phòng ngủ",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 399,
+    "word": "bathroom",
+    "meaning": "phòng tắm",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 400,
+    "word": "garage",
+    "meaning": "ga ra, nhà để xe",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 401,
+    "word": "attic",
+    "meaning": "tum, gác xép",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 402,
+    "word": "basement",
+    "meaning": "tầng hầm",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 403,
+    "word": "roof",
+    "meaning": "mái nhà",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 404,
+    "word": "entrance",
+    "meaning": "lối vào, cổng vào",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 405,
+    "word": "patio",
+    "meaning": "hiên, sân hè",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 406,
+    "word": "balcony",
+    "meaning": "ban công",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 407,
+    "word": "floor",
+    "meaning": "sàn nhà",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 408,
+    "word": "wall",
+    "meaning": "tường",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 409,
+    "word": "ceiling",
+    "meaning": "trần nhà",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 410,
+    "word": "door",
+    "meaning": "cửa ra vào",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 411,
+    "word": "window",
+    "meaning": "cửa sổ",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 412,
+    "word": "curtain",
+    "meaning": "rèm cửa",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 413,
+    "word": "armchair",
+    "meaning": "ghế bành",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 414,
+    "word": "couch",
+    "meaning": "ghế dài, đi văng",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 415,
+    "word": "table",
+    "meaning": "cái bàn",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 416,
+    "word": "lamp",
+    "meaning": "cái đèn",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 417,
+    "word": "fan",
+    "meaning": "cái quạt",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 418,
+    "word": "air conditioner",
+    "meaning": "điều hòa nhiệt độ",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 419,
+    "word": "television",
+    "meaning": "ti vi",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 420,
+    "word": "bookshelf",
+    "meaning": "kệ sách",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 421,
+    "word": "rug",
+    "meaning": "thảm trải sàn",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 422,
+    "word": "cupboard",
+    "meaning": "tủ bát",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 423,
+    "word": "refrigerator",
+    "meaning": "tủ lạnh",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 424,
+    "word": "stove",
+    "meaning": "bếp lò",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 425,
+    "word": "oven",
+    "meaning": "lò nướng",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 426,
+    "word": "microwave",
+    "meaning": "lò vi sóng",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 427,
+    "word": "cooker",
+    "meaning": "nồi cơm điện",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 428,
+    "word": "blender",
+    "meaning": "máy xay",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 429,
+    "word": "kettle",
+    "meaning": "ấm đun nước",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 430,
+    "word": "tablecloth",
+    "meaning": "khăn trải bàn",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 431,
+    "word": "bed",
+    "meaning": "giường",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 432,
+    "word": "mattress",
+    "meaning": "đệm",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 433,
+    "word": "blanket",
+    "meaning": "chăn",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 434,
+    "word": "pillow",
+    "meaning": "gối",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 435,
+    "word": "wardrobe",
+    "meaning": "tủ quần áo",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 436,
+    "word": "nightstand",
+    "meaning": "tủ đầu giường",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 437,
+    "word": "hairdryer",
+    "meaning": "máy sấy tóc",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 438,
+    "word": "photo frame",
+    "meaning": "khung ảnh",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 439,
+    "word": "plant pot",
+    "meaning": "chậu cây",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 440,
+    "word": "vase",
+    "meaning": "lọ hoa",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 441,
+    "word": "dressing table",
+    "meaning": "bàn trang điểm",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 442,
+    "word": "sink",
+    "meaning": "bồn rửa",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 443,
+    "word": "mirror",
+    "meaning": "gương",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 444,
+    "word": "shower",
+    "meaning": "vòi hoa sen",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 445,
+    "word": "toilet",
+    "meaning": "bồn cầu",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 446,
+    "word": "bathtub",
+    "meaning": "bồn tắm",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 447,
+    "word": "towel",
+    "meaning": "khăn",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 448,
+    "word": "broom",
+    "meaning": "chổi quét",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 449,
+    "word": "mop",
+    "meaning": "chổi lau nhà",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 450,
+    "word": "dustpan",
+    "meaning": "xẻng hót rác",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 451,
+    "word": "bucket",
+    "meaning": "xô",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 452,
+    "word": "trash can",
+    "meaning": "thùng rác",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 453,
+    "word": "washing machine",
+    "meaning": "máy giặt",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 454,
+    "word": "laundry basket",
+    "meaning": "giỏ đựng quần áo",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 455,
+    "word": "hanger",
+    "meaning": "móc treo quần áo",
+    "example": "",
+    "topic": "House"
+  },
+  {
+    "stt": 456,
+    "word": "bean",
+    "meaning": "hạt đậu",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 457,
+    "word": "pea",
+    "meaning": "đậu Hà Lan",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 458,
+    "word": "cabbage",
+    "meaning": "bắp cải",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 459,
+    "word": "carrot",
+    "meaning": "củ cà rốt",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 460,
+    "word": "corn",
+    "meaning": "ngô, bắp",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 461,
+    "word": "cucumber",
+    "meaning": "dưa chuột",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 462,
+    "word": "tomato",
+    "meaning": "quả cà chua",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 463,
+    "word": "garlic",
+    "meaning": "tỏi",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 464,
+    "word": "onion",
+    "meaning": "củ hành",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 465,
+    "word": "spring onion",
+    "meaning": "hành lá",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 466,
+    "word": "ginger",
+    "meaning": "củ gừng",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 467,
+    "word": "turmeric",
+    "meaning": "củ nghệ",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 468,
+    "word": "potato",
+    "meaning": "khoai tây",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 469,
+    "word": "sweet potato",
+    "meaning": "khoai lang",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 470,
+    "word": "pumpkin",
+    "meaning": "bí ngô, bí đỏ",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 471,
+    "word": "asparagus",
+    "meaning": "măng tây",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 472,
+    "word": "turnip",
+    "meaning": "củ cải trắng",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 473,
+    "word": "beet",
+    "meaning": "củ cải đường",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 474,
+    "word": "cauliflower",
+    "meaning": "súp lơ",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 475,
+    "word": "broccoli",
+    "meaning": "bông cải xanh",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 476,
+    "word": "eggplant",
+    "meaning": "cà tím",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 477,
+    "word": "celery",
+    "meaning": "cần tây",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 478,
+    "word": "leek",
+    "meaning": "tỏi tây",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 479,
+    "word": "lettuce",
+    "meaning": "rau diếp",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 480,
+    "word": "mushroom",
+    "meaning": "nấm",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 481,
+    "word": "chili pepper",
+    "meaning": "ớt cay",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 482,
+    "word": "bell pepper",
+    "meaning": "ớt chuông",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 483,
+    "word": "spinach",
+    "meaning": "rau chân vịt",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 484,
+    "word": "herb",
+    "meaning": "rau thơm",
+    "example": "",
+    "topic": "Vegetable"
+  },
+  {
+    "stt": 485,
+    "word": "water",
+    "meaning": "nước",
+    "example": "",
+    "topic": "Drink"
+  },
+  {
+    "stt": 486,
+    "word": "lemonade",
+    "meaning": "nước chanh",
+    "example": "",
+    "topic": "Drink"
+  },
+  {
+    "stt": 487,
+    "word": "juice",
+    "meaning": "nước ép hoa quả",
+    "example": "",
+    "topic": "Drink"
+  },
+  {
+    "stt": 488,
+    "word": "smoothie",
+    "meaning": "sinh tố",
+    "example": "",
+    "topic": "Drink"
+  },
+  {
+    "stt": 489,
+    "word": "coffee",
+    "meaning": "cà phê",
+    "example": "",
+    "topic": "Drink"
+  },
+  {
+    "stt": 490,
+    "word": "tea",
+    "meaning": "trà",
+    "example": "",
+    "topic": "Drink"
+  },
+  {
+    "stt": 491,
+    "word": "milk",
+    "meaning": "sữa",
+    "example": "",
+    "topic": "Drink"
+  },
+  {
+    "stt": 492,
+    "word": "bubble tea",
+    "meaning": "trà sữa trân châu",
+    "example": "",
+    "topic": "Drink"
+  },
+  {
+    "stt": 493,
+    "word": "hot chocolate",
+    "meaning": "sô cô la nóng",
+    "example": "",
+    "topic": "Drink"
+  },
+  {
+    "stt": 494,
+    "word": "beer",
+    "meaning": "bia",
+    "example": "",
+    "topic": "Drink"
+  },
+  {
+    "stt": 495,
+    "word": "wine",
+    "meaning": "rượu",
+    "example": "",
+    "topic": "Drink"
+  },
+  {
+    "stt": 496,
+    "word": "yogurt",
+    "meaning": "sữa chua",
+    "example": "",
+    "topic": "Drink"
+  },
+  {
+    "stt": 497,
+    "word": "ice cream",
+    "meaning": "kem",
+    "example": "",
+    "topic": "Drink"
+  },
+  {
+    "stt": 498,
+    "word": "soup",
+    "meaning": "món súp, món canh",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 499,
+    "word": "salad",
+    "meaning": "rau trộn, nộm rau",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 500,
+    "word": "bread",
+    "meaning": "bánh mì",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 501,
+    "word": "sausage",
+    "meaning": "xúc xích",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 502,
+    "word": "hot dog",
+    "meaning": "bánh mỳ kẹp xúc xích",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 503,
+    "word": "bacon",
+    "meaning": "thịt xông khói",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 504,
+    "word": "ham",
+    "meaning": "thịt giăm bông",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 505,
+    "word": "egg",
+    "meaning": "trứng",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 506,
+    "word": "pork",
+    "meaning": "thịt lợn",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 507,
+    "word": "beef",
+    "meaning": "thịt bò",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 508,
+    "word": "chicken",
+    "meaning": "thịt gà",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 509,
+    "word": "duck",
+    "meaning": "thịt vịt",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 510,
+    "word": "lamb",
+    "meaning": "thịt cừu",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 511,
+    "word": "ribs",
+    "meaning": "sườn",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 512,
+    "word": "seafood",
+    "meaning": "hải sản",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 513,
+    "word": "salmon",
+    "meaning": "cá hồi",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 514,
+    "word": "tuna",
+    "meaning": "cá ngừ",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 515,
+    "word": "shrimp",
+    "meaning": "tôm",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 516,
+    "word": "pizza",
+    "meaning": "bánh pizza",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 517,
+    "word": "beefsteak",
+    "meaning": "bít tết",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 518,
+    "word": "French fries",
+    "meaning": "khoai tây chiên",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 519,
+    "word": "hamburger",
+    "meaning": "hăm bơ gơ",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 520,
+    "word": "chicken nugget",
+    "meaning": "gà viên chiên",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 521,
+    "word": "sandwich",
+    "meaning": "bánh mỳ kẹp",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 522,
+    "word": "pancake",
+    "meaning": "bánh kếp, bánh xèo",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 523,
+    "word": "noodle",
+    "meaning": "mỳ, bún",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 524,
+    "word": "pasta",
+    "meaning": "mỳ Ý",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 525,
+    "word": "cheese",
+    "meaning": "pho mát",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 526,
+    "word": "hot pot",
+    "meaning": "lẩu",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 527,
+    "word": "porridge",
+    "meaning": "cháo",
+    "example": "",
+    "topic": "Food"
+  },
+  {
+    "stt": 528,
+    "word": "walk",
+    "meaning": "đi bộ",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 529,
+    "word": "jog",
+    "meaning": "đi bộ nhanh (tập thể dục)",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 530,
+    "word": "run",
+    "meaning": "chạy",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 531,
+    "word": "tiptoe",
+    "meaning": "đi nhón chân",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 532,
+    "word": "jump",
+    "meaning": "nhảy",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 533,
+    "word": "leap",
+    "meaning": "nhảy vọt",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 534,
+    "word": "stand",
+    "meaning": "đứng",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 535,
+    "word": "sit",
+    "meaning": "ngồi",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 536,
+    "word": "lean",
+    "meaning": "dựa, tựa",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 537,
+    "word": "wave",
+    "meaning": "vẫy tay",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 538,
+    "word": "clap",
+    "meaning": "vỗ tay",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 539,
+    "word": "point",
+    "meaning": "chỉ, trỏ",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 540,
+    "word": "catch",
+    "meaning": "bắt, đỡ",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 541,
+    "word": "stretch",
+    "meaning": "vươn vai, ưỡn lưng",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 542,
+    "word": "push",
+    "meaning": "đẩy",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 543,
+    "word": "pull",
+    "meaning": "kéo",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 544,
+    "word": "crawl",
+    "meaning": "bò, trườn",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 545,
+    "word": "bend",
+    "meaning": "cúi, uốn cong",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 546,
+    "word": "talk",
+    "meaning": "nói chuyện",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 547,
+    "word": "kiss",
+    "meaning": "hôn",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 548,
+    "word": "laugh",
+    "meaning": "cười lớn",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 549,
+    "word": "smile",
+    "meaning": "cười",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 550,
+    "word": "frown",
+    "meaning": "nhíu mày",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 551,
+    "word": "cry",
+    "meaning": "khóc lóc",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 552,
+    "word": "hit",
+    "meaning": "đánh, va phải",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 553,
+    "word": "punch",
+    "meaning": "đấm, thọi",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 554,
+    "word": "kick",
+    "meaning": "đá",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 555,
+    "word": "put down",
+    "meaning": "đặt xuống",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 556,
+    "word": "march",
+    "meaning": "diễu hành",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 557,
+    "word": "drop",
+    "meaning": "làm rơi",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 558,
+    "word": "break",
+    "meaning": "làm vỡ, bẻ gãy",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 559,
+    "word": "drag",
+    "meaning": "lôi, kéo",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 560,
+    "word": "carry",
+    "meaning": "mang, vác",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 561,
+    "word": "open",
+    "meaning": "mở ra",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 562,
+    "word": "lie down",
+    "meaning": "nằm xuống",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 563,
+    "word": "hold",
+    "meaning": "nắm, giữ",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 564,
+    "word": "lift",
+    "meaning": "nâng lên",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 565,
+    "word": "throw",
+    "meaning": "ném, quăng",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 566,
+    "word": "trip",
+    "meaning": "vấp ngã",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 567,
+    "word": "squat",
+    "meaning": "ngồi xổm",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 568,
+    "word": "cartwheel",
+    "meaning": "nhào lộn",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 569,
+    "word": "dive",
+    "meaning": "nhảy lao xuống nước",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 570,
+    "word": "dance",
+    "meaning": "nhảy múa, khiêu vũ",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 571,
+    "word": "look",
+    "meaning": "nhìn, ngắm",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 572,
+    "word": "kneel",
+    "meaning": "quỳ gối",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 573,
+    "word": "slip",
+    "meaning": "trượt, tuột",
+    "example": "",
+    "topic": "Body Movement"
+  },
+  {
+    "stt": 574,
+    "word": "clothes",
+    "meaning": "quần áo",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 575,
+    "word": "t-shirt",
+    "meaning": "áo phông",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 576,
+    "word": "shirt",
+    "meaning": "áo sơ mi",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 577,
+    "word": "sweater",
+    "meaning": "áo len dài tay",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 578,
+    "word": "vest",
+    "meaning": "áo gi-lê, áo vét",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 579,
+    "word": "suit",
+    "meaning": "bộ com lê, Âu phục",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 580,
+    "word": "trench coat",
+    "meaning": "áo choàng",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 581,
+    "word": "skirt",
+    "meaning": "chân váy",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 582,
+    "word": "pants",
+    "meaning": "quần",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 583,
+    "word": "jeans",
+    "meaning": "quần bò",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 584,
+    "word": "shorts",
+    "meaning": "quần đùi",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 585,
+    "word": "accessories",
+    "meaning": "phụ kiện",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 586,
+    "word": "hat",
+    "meaning": "mũ",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 587,
+    "word": "glasses",
+    "meaning": "kính mắt",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 588,
+    "word": "sunglasses",
+    "meaning": "kính râm",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 589,
+    "word": "earring",
+    "meaning": "khuyên tai",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 590,
+    "word": "necklace",
+    "meaning": "vòng cổ",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 591,
+    "word": "ring",
+    "meaning": "nhẫn",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 592,
+    "word": "hairpin",
+    "meaning": "cặp tóc",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 593,
+    "word": "tie",
+    "meaning": "cà vạt, nơ",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 594,
+    "word": "scarf",
+    "meaning": "khăn choàng",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 595,
+    "word": "gloves",
+    "meaning": "găng tay",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 596,
+    "word": "watch",
+    "meaning": "đồng hồ",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 597,
+    "word": "handbag",
+    "meaning": "túi xách",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 598,
+    "word": "wallet",
+    "meaning": "ví, bóp",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 599,
+    "word": "belt",
+    "meaning": "thắt lưng",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 600,
+    "word": "socks",
+    "meaning": "tất, vớ",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 601,
+    "word": "shoe",
+    "meaning": "giày",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 602,
+    "word": "boot",
+    "meaning": "ủng, giày cao cổ",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 603,
+    "word": "swimsuit",
+    "meaning": "đồ bơi",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 604,
+    "word": "bra",
+    "meaning": "áo lót",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 605,
+    "word": "underwear",
+    "meaning": "quần lót",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 606,
+    "word": "button",
+    "meaning": "khuy áo",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 607,
+    "word": "collar",
+    "meaning": "cổ áo",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 608,
+    "word": "hem",
+    "meaning": "đường viền",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 609,
+    "word": "hood",
+    "meaning": "mũ áo",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 610,
+    "word": "pocket",
+    "meaning": "túi áo",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 611,
+    "word": "sleeve",
+    "meaning": "tay áo",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 612,
+    "word": "strap",
+    "meaning": "dây",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 613,
+    "word": "zip",
+    "meaning": "khóa kéo",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 614,
+    "word": "cuff",
+    "meaning": "cổ tay áo",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 615,
+    "word": "denim",
+    "meaning": "vải bò",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 616,
+    "word": "silk",
+    "meaning": "lụa",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 617,
+    "word": "corduroy",
+    "meaning": "nhung",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 618,
+    "word": "cotton",
+    "meaning": "vải sợi bông",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 619,
+    "word": "linen",
+    "meaning": "vải lanh",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 620,
+    "word": "khaki",
+    "meaning": "vải kaki",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 621,
+    "word": "jewel",
+    "meaning": "đá quý",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 622,
+    "word": "diamond",
+    "meaning": "kim cương",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 623,
+    "word": "gold",
+    "meaning": "vàng",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 624,
+    "word": "silver",
+    "meaning": "bạc",
+    "example": "",
+    "topic": "Clothes"
+  },
+  {
+    "stt": 625,
+    "word": "annoyed",
+    "meaning": "khó chịu, bực bội",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 626,
+    "word": "angry",
+    "meaning": "tức giận",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 627,
+    "word": "mad",
+    "meaning": "cực kì giận",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 628,
+    "word": "worried",
+    "meaning": "lo lắng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 629,
+    "word": "happy",
+    "meaning": "vui vẻ",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 630,
+    "word": "sad",
+    "meaning": "buồn sầu",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 631,
+    "word": "moody",
+    "meaning": "buồn bực",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 632,
+    "word": "anxious",
+    "meaning": "lo âu, bồn chồn",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 633,
+    "word": "grateful",
+    "meaning": "biết ơn",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 634,
+    "word": "emotional",
+    "meaning": "xúc động",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 635,
+    "word": "hungry",
+    "meaning": "đói",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 636,
+    "word": "thirsty",
+    "meaning": "khát",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 637,
+    "word": "astonished",
+    "meaning": "kinh ngạc",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 638,
+    "word": "uncomfortable",
+    "meaning": "không thoải mái",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 639,
+    "word": "wonderful",
+    "meaning": "tuyệt vời",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 640,
+    "word": "bored",
+    "meaning": "buồn chán",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 641,
+    "word": "tired",
+    "meaning": "mệt mỏi",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 642,
+    "word": "terrible",
+    "meaning": "tệ hại",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 643,
+    "word": "calm",
+    "meaning": "bình tĩnh",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 644,
+    "word": "unhappy",
+    "meaning": "không vui",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 645,
+    "word": "upset",
+    "meaning": "buồn bực",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 646,
+    "word": "delighted",
+    "meaning": "vui mừng, mừng rỡ",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 647,
+    "word": "desperate",
+    "meaning": "tuyệt vọng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 648,
+    "word": "disturbed",
+    "meaning": "bối rối, lúng túng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 649,
+    "word": "doubtful",
+    "meaning": "nghi hoặc, hoài nghi",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 650,
+    "word": "down",
+    "meaning": "nản lòng, chán nản",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 651,
+    "word": "drained",
+    "meaning": "kiệt sức",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 652,
+    "word": "elated",
+    "meaning": "phấn khởi, hân hoan",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 653,
+    "word": "embarrassed",
+    "meaning": "xấu hổ, ngại ngùng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 654,
+    "word": "empathetic",
+    "meaning": "đồng cảm",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 655,
+    "word": "enlightened",
+    "meaning": "được thông suốt",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 656,
+    "word": "jealous",
+    "meaning": "ghen tị",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 657,
+    "word": "envious",
+    "meaning": "ghen tị, độ kỵ",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 658,
+    "word": "excited",
+    "meaning": "hưng phấn, sôi nổi",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 659,
+    "word": "excluded",
+    "meaning": "bị bỏ rơi, cảm giác lạc lõng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 660,
+    "word": "exhausted",
+    "meaning": "mệt lử",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 661,
+    "word": "foolish",
+    "meaning": "dại dột",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 662,
+    "word": "frustrated",
+    "meaning": "nản lòng, nản chí",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 663,
+    "word": "furious",
+    "meaning": "giận dữ, điên tiết",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 664,
+    "word": "giddy",
+    "meaning": "chóng mặt, choáng váng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 665,
+    "word": "glad",
+    "meaning": "vui sướng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 666,
+    "word": "gleeful",
+    "meaning": "hân hoan, mừng rỡ",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 667,
+    "word": "guarded",
+    "meaning": "thận trọng, ý tứ",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 668,
+    "word": "guilty",
+    "meaning": "mặc cảm tội lỗi",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 669,
+    "word": "hesitant",
+    "meaning": "do dự, ngập ngừng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 670,
+    "word": "hollow",
+    "meaning": "trống rỗng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 671,
+    "word": "horrified",
+    "meaning": "khiếp sợ",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 672,
+    "word": "humiliated",
+    "meaning": "cảm giác bẽ mặt",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 673,
+    "word": "indifferent",
+    "meaning": "dửng dưng, thờ ơ",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 674,
+    "word": "intense",
+    "meaning": "mãnh liệt, nồng nhiệt",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 675,
+    "word": "interested",
+    "meaning": "hứng thú, thích thú",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 676,
+    "word": "irritated",
+    "meaning": "tức tối, khó chịu",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 677,
+    "word": "jittery",
+    "meaning": "bồn chồn, dễ bị kích động",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 678,
+    "word": "jolly",
+    "meaning": "vui tươi, nhộn nhịp",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 679,
+    "word": "joyful",
+    "meaning": "hân hoan, vui mừng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 680,
+    "word": "keen",
+    "meaning": "say mê, ham thích",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 681,
+    "word": "lonely",
+    "meaning": "cô đơn",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 682,
+    "word": "longing",
+    "meaning": "thèm khát, thèm muốn",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 683,
+    "word": "lost",
+    "meaning": "lạc lõng, mất phương hướng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 684,
+    "word": "lucky",
+    "meaning": "may mắn",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 685,
+    "word": "melancholic",
+    "meaning": "u sầu, buồn bã",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 686,
+    "word": "miserable",
+    "meaning": "khốn khổ, đáng thương",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 687,
+    "word": "mortified",
+    "meaning": "xấu hổ, ái ngại",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 688,
+    "word": "mournful",
+    "meaning": "buồn rầu, ảm đạm",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 689,
+    "word": "nasty",
+    "meaning": "tục tĩu",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 690,
+    "word": "needy",
+    "meaning": "thiếu thốn về mặt tình cảm",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 691,
+    "word": "nervous",
+    "meaning": "lo lắng, bồn chồn",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 692,
+    "word": "numb",
+    "meaning": "lặng người",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 693,
+    "word": "obsessed",
+    "meaning": "ám ảnh",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 694,
+    "word": "offended",
+    "meaning": "phật ý, cảm thấy bị xúc phạm",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 695,
+    "word": "optimistic",
+    "meaning": "lạc quan, yêu đời",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 696,
+    "word": "overwhelmed",
+    "meaning": "choáng ngợp, quá tải",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 697,
+    "word": "passionate",
+    "meaning": "nồng nhiệt, thiết tha",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 698,
+    "word": "peaceful",
+    "meaning": "thanh thản, bình yên",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 699,
+    "word": "positive",
+    "meaning": "tích cực, lạc quan",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 700,
+    "word": "proud",
+    "meaning": "hãnh diện, tự hào",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 701,
+    "word": "regretful",
+    "meaning": "hối tiếc",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 702,
+    "word": "relaxed",
+    "meaning": "thư giãn, thoải mái",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 703,
+    "word": "relieved",
+    "meaning": "nhẹ nhõm",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 704,
+    "word": "satisfied",
+    "meaning": "thỏa mãn, hài lòng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 705,
+    "word": "self-conscious",
+    "meaning": "e dè, ngượng nghịu",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 706,
+    "word": "selfish",
+    "meaning": "ích kỷ",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 707,
+    "word": "sensitive",
+    "meaning": "nhạy cảm, dễ tổn thương",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 708,
+    "word": "shameful",
+    "meaning": "đáng hổ thẹn",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 709,
+    "word": "shocked",
+    "meaning": "bất ngờ, sốc",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 710,
+    "word": "speechless",
+    "meaning": "câm nín",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 711,
+    "word": "stressed",
+    "meaning": "căng thẳng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 712,
+    "word": "stunned",
+    "meaning": "sững sờ, bất ngờ",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 713,
+    "word": "surprised",
+    "meaning": "bất ngờ, ngạc nhiên",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 714,
+    "word": "thankful",
+    "meaning": "biết ơn",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 715,
+    "word": "upbeat",
+    "meaning": "vui vẻ, phấn chấn",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 716,
+    "word": "uptight",
+    "meaning": "căng thẳng, lo lắng",
+    "example": "",
+    "topic": "Feeling"
+  },
+  {
+    "stt": 717,
+    "word": "ingredient",
+    "meaning": "nguyên liệu",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 718,
+    "word": "recipe",
+    "meaning": "công thức nấu ăn",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 719,
+    "word": "cooking oil",
+    "meaning": "dầu ăn",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 720,
+    "word": "salt",
+    "meaning": "muối",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 721,
+    "word": "sugar",
+    "meaning": "đường",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 722,
+    "word": "vinegar",
+    "meaning": "dấm",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 723,
+    "word": "chili sauce",
+    "meaning": "tương ớt",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 724,
+    "word": "ketchup",
+    "meaning": "tương cà chua",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 725,
+    "word": "raw",
+    "meaning": "sống",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 726,
+    "word": "wash",
+    "meaning": "rửa",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 727,
+    "word": "peel",
+    "meaning": "bóc vỏ",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 728,
+    "word": "chop",
+    "meaning": "chặt, bổ",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 729,
+    "word": "chunk",
+    "meaning": "cắt khúc",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 730,
+    "word": "filet",
+    "meaning": "róc xương, lạng thịt",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 731,
+    "word": "slice",
+    "meaning": "thái",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 732,
+    "word": "dice",
+    "meaning": "thái hạt lựu",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 733,
+    "word": "mince",
+    "meaning": "băm, xay",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 734,
+    "word": "mash",
+    "meaning": "nghiền, làm nát",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 735,
+    "word": "blend",
+    "meaning": "trộn",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 736,
+    "word": "boil",
+    "meaning": "đun sôi, luộc",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 737,
+    "word": "steam",
+    "meaning": "hấp",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 738,
+    "word": "stew",
+    "meaning": "hầm, ninh nhừ",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 739,
+    "word": "blanch",
+    "meaning": "chần thức ăn",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 740,
+    "word": "stir",
+    "meaning": "xào, quấy",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 741,
+    "word": "fry",
+    "meaning": "rán",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 742,
+    "word": "bake",
+    "meaning": "nướng (bánh)",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 743,
+    "word": "roast",
+    "meaning": "quay, nướng",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 744,
+    "word": "grill",
+    "meaning": "nướng",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 745,
+    "word": "steep",
+    "meaning": "ngâm",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 746,
+    "word": "dip",
+    "meaning": "nhúng",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 747,
+    "word": "brew",
+    "meaning": "ủ (trà, rượu)",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 748,
+    "word": "ferment",
+    "meaning": "lên men",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 749,
+    "word": "chill",
+    "meaning": "làm tan giá, rã đông",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 750,
+    "word": "cool",
+    "meaning": "để nguội",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 751,
+    "word": "melt",
+    "meaning": "làm tan chảy",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 752,
+    "word": "flavor",
+    "meaning": "tẩm gia vị",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 753,
+    "word": "marinate",
+    "meaning": "ướp",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 754,
+    "word": "salt",
+    "meaning": "ướp gia vị, rắc muối",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 755,
+    "word": "garnish",
+    "meaning": "trang trí, bày biện",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 756,
+    "word": "press",
+    "meaning": "ấn, ép",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 757,
+    "word": "refrigerate",
+    "meaning": "ướp lạnh",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 758,
+    "word": "roll",
+    "meaning": "cuộn",
+    "example": "",
+    "topic": "Cooking"
+  },
+  {
+    "stt": 759,
+    "word": "car",
+    "meaning": "xe ô tô",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 760,
+    "word": "taxi",
+    "meaning": "xe taxi",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 761,
+    "word": "bus",
+    "meaning": "xe buýt",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 762,
+    "word": "bicycle",
+    "meaning": "xe đạp",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 763,
+    "word": "motorcycle",
+    "meaning": "xe máy",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 764,
+    "word": "airplane",
+    "meaning": "máy bay",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 765,
+    "word": "helicopter",
+    "meaning": "trực thăng",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 766,
+    "word": "train",
+    "meaning": "tàu hỏa",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 767,
+    "word": "subway",
+    "meaning": "tàu điện ngầm",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 768,
+    "word": "boat",
+    "meaning": "thuyền",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 769,
+    "word": "ship",
+    "meaning": "tàu",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 770,
+    "word": "van",
+    "meaning": "xe van",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 771,
+    "word": "police car",
+    "meaning": "xe cảnh sát",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 772,
+    "word": "ambulance",
+    "meaning": "xe cứu thương",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 773,
+    "word": "scooter",
+    "meaning": "xe tay ga",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 774,
+    "word": "truck",
+    "meaning": "xe tải",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 775,
+    "word": "yacht",
+    "meaning": "du thuyền",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 776,
+    "word": "canoe",
+    "meaning": "ca nô",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 777,
+    "word": "fire engine",
+    "meaning": "xe cứu hỏa",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 778,
+    "word": "hot-air balloon",
+    "meaning": "khinh khí cầu",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 779,
+    "word": "submarine",
+    "meaning": "tàu ngầm",
+    "example": "",
+    "topic": "Vehicles"
+  },
+  {
+    "stt": 780,
+    "word": "travel",
+    "meaning": "đi du lịch",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 781,
+    "word": "depart",
+    "meaning": "khởi hành",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 782,
+    "word": "leave",
+    "meaning": "rời đi",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 783,
+    "word": "arrive",
+    "meaning": "đến nơi",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 784,
+    "word": "airport",
+    "meaning": "sân bay",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 785,
+    "word": "take off",
+    "meaning": "cất cánh",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 786,
+    "word": "land",
+    "meaning": "hạ cánh",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 787,
+    "word": "check in",
+    "meaning": "đăng ký phòng",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 788,
+    "word": "check out",
+    "meaning": "trả phòng khách sạn",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 789,
+    "word": "visit",
+    "meaning": "thăm viếng",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 790,
+    "word": "destination",
+    "meaning": "điểm đến",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 791,
+    "word": "passenger",
+    "meaning": "hành khách",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 792,
+    "word": "tourist",
+    "meaning": "khách du lịch",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 793,
+    "word": "cruise",
+    "meaning": "chuyến đi chơi trên biển",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 794,
+    "word": "route",
+    "meaning": "lộ trình",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 795,
+    "word": "tour",
+    "meaning": "chuyến đi du lịch",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 796,
+    "word": "trip",
+    "meaning": "cuộc du ngoạn",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 797,
+    "word": "journey",
+    "meaning": "hành trình",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 798,
+    "word": "passport",
+    "meaning": "hộ chiếu",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 799,
+    "word": "ticket",
+    "meaning": "vé",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 800,
+    "word": "visa",
+    "meaning": "thị thực",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 801,
+    "word": "luggage",
+    "meaning": "hành lý",
+    "example": "",
+    "topic": "Travel"
+  },
+  {
+    "stt": 802,
+    "word": "English",
+    "meaning": "tiếng Anh",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 803,
+    "word": "Mathematics",
+    "meaning": "toán học",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 804,
+    "word": "Physics",
+    "meaning": "vật lý",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 805,
+    "word": "Chemistry",
+    "meaning": "hóa học",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 806,
+    "word": "History",
+    "meaning": "lịch sử",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 807,
+    "word": "Geography",
+    "meaning": "địa lý",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 808,
+    "word": "Literature",
+    "meaning": "văn học",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 809,
+    "word": "Biology",
+    "meaning": "sinh học",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 810,
+    "word": "Physical Education",
+    "meaning": "giáo dục thể chất",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 811,
+    "word": "Information Technology",
+    "meaning": "công nghệ thông tin",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 812,
+    "word": "Craft",
+    "meaning": "thủ công",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 813,
+    "word": "Arts",
+    "meaning": "mỹ thuật, nghệ thuật",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 814,
+    "word": "Music",
+    "meaning": "âm nhạc",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 815,
+    "word": "Engineering",
+    "meaning": "kỹ thuật",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 816,
+    "word": "Medicine",
+    "meaning": "y học",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 817,
+    "word": "Science",
+    "meaning": "khoa học",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 818,
+    "word": "Astronomy",
+    "meaning": "thiên văn học",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 819,
+    "word": "Philosophy",
+    "meaning": "triết học",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 820,
+    "word": "Psychology",
+    "meaning": "tâm lý học",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 821,
+    "word": "Economics",
+    "meaning": "kinh tế học",
+    "example": "",
+    "topic": "Subject"
+  },
+  {
+    "stt": 822,
+    "word": "line",
+    "meaning": "đường thẳng",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 823,
+    "word": "circle",
+    "meaning": "hình tròn",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 824,
+    "word": "triangle",
+    "meaning": "hình tam giác",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 825,
+    "word": "rectangle",
+    "meaning": "hình chữ nhật",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 826,
+    "word": "square",
+    "meaning": "hình vuông",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 827,
+    "word": "trapezoid",
+    "meaning": "hình thang",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 828,
+    "word": "heart",
+    "meaning": "hình trái tim",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 829,
+    "word": "star",
+    "meaning": "hình ngôi sao",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 830,
+    "word": "diamond",
+    "meaning": "hình kim cương",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 831,
+    "word": "ellipse",
+    "meaning": "hình Elip",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 832,
+    "word": "oval",
+    "meaning": "hình bầu dục",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 833,
+    "word": "curve",
+    "meaning": "đường cong",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 834,
+    "word": "arrow",
+    "meaning": "hình mũi tên",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 835,
+    "word": "cross",
+    "meaning": "hình chữ thập",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 836,
+    "word": "crescent",
+    "meaning": "hình lưỡi liềm",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 837,
+    "word": "cone",
+    "meaning": "hình nón",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 838,
+    "word": "cube",
+    "meaning": "hình lập phương",
+    "example": "",
+    "topic": "Shape"
+  },
+  {
+    "stt": 839,
+    "word": "football",
+    "meaning": "bóng đá",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 840,
+    "word": "American football",
+    "meaning": "bóng bầu dục",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 841,
+    "word": "volleyball",
+    "meaning": "bóng chuyền",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 842,
+    "word": "swimming",
+    "meaning": "bơi lội",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 843,
+    "word": "tennis",
+    "meaning": "quần vợt",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 844,
+    "word": "badminton",
+    "meaning": "cầu lông",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 845,
+    "word": "basketball",
+    "meaning": "bóng rổ",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 846,
+    "word": "table tennis",
+    "meaning": "bóng bàn",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 847,
+    "word": "baseball",
+    "meaning": "bóng chày",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 848,
+    "word": "athletics",
+    "meaning": "điền kinh",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 849,
+    "word": "martial arts",
+    "meaning": "võ thuật",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 850,
+    "word": "archery",
+    "meaning": "bắn cung",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 851,
+    "word": "cycling",
+    "meaning": "đua xe đạp",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 852,
+    "word": "boxing",
+    "meaning": "quyền anh",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 853,
+    "word": "diving",
+    "meaning": "nhảy cầu, lặn",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 854,
+    "word": "skiing",
+    "meaning": "trượt tuyết",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 855,
+    "word": "figure skating",
+    "meaning": "trượt băng nghệ thuật",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 856,
+    "word": "skateboarding",
+    "meaning": "trượt ván",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 857,
+    "word": "billiards",
+    "meaning": "bi-a",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 858,
+    "word": "weightlifting",
+    "meaning": "cử tạ",
+    "example": "",
+    "topic": "Sports"
+  },
+  {
+    "stt": 859,
+    "word": "second",
+    "meaning": "giây",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 860,
+    "word": "minute",
+    "meaning": "phút",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 861,
+    "word": "hour",
+    "meaning": "giờ",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 862,
+    "word": "week",
+    "meaning": "tuần",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 863,
+    "word": "decade",
+    "meaning": "thập kỷ",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 864,
+    "word": "century",
+    "meaning": "thế kỷ",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 865,
+    "word": "weekend",
+    "meaning": "cuối tuần",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 866,
+    "word": "month",
+    "meaning": "tháng",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 867,
+    "word": "year",
+    "meaning": "năm",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 868,
+    "word": "millennium",
+    "meaning": "thiên niên kỷ",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 869,
+    "word": "morning",
+    "meaning": "buổi sáng",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 870,
+    "word": "noon",
+    "meaning": "buổi trưa",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 871,
+    "word": "afternoon",
+    "meaning": "buổi chiều",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 872,
+    "word": "evening",
+    "meaning": "buổi tối",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 873,
+    "word": "midnight",
+    "meaning": "nửa đêm",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 874,
+    "word": "sunset",
+    "meaning": "hoàng hôn",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 875,
+    "word": "sunrise",
+    "meaning": "bình minh",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 876,
+    "word": "always",
+    "meaning": "luôn luôn",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 877,
+    "word": "often",
+    "meaning": "thường xuyên",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 878,
+    "word": "normally",
+    "meaning": "thường xuyên",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 879,
+    "word": "usually",
+    "meaning": "thường xuyên",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 880,
+    "word": "sometimes",
+    "meaning": "thỉnh thoảng",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 881,
+    "word": "occasionally",
+    "meaning": "thỉnh thoảng",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 882,
+    "word": "rarely",
+    "meaning": "hiếm khi",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 883,
+    "word": "seldom",
+    "meaning": "ít khi, hiếm khi",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 884,
+    "word": "never",
+    "meaning": "không bao giờ",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 885,
+    "word": "January",
+    "meaning": "tháng 1",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 886,
+    "word": "February",
+    "meaning": "tháng 2",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 887,
+    "word": "March",
+    "meaning": "tháng 3",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 888,
+    "word": "April",
+    "meaning": "tháng 4",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 889,
+    "word": "May",
+    "meaning": "tháng 5",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 890,
+    "word": "June",
+    "meaning": "tháng 6",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 891,
+    "word": "July",
+    "meaning": "tháng 7",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 892,
+    "word": "August",
+    "meaning": "tháng 8",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 893,
+    "word": "September",
+    "meaning": "tháng 9",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 894,
+    "word": "October",
+    "meaning": "tháng 10",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 895,
+    "word": "November",
+    "meaning": "tháng 11",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 896,
+    "word": "December",
+    "meaning": "tháng 12",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 897,
+    "word": "spring",
+    "meaning": "mùa xuân",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 898,
+    "word": "summer",
+    "meaning": "mùa hạ",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 899,
+    "word": "autumn",
+    "meaning": "mùa thu",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 900,
+    "word": "winter",
+    "meaning": "mùa đông",
+    "example": "",
+    "topic": "Time"
+  },
+  {
+    "stt": 901,
+    "word": "rose",
+    "meaning": "hoa hồng",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 902,
+    "word": "sunflower",
+    "meaning": "hoa hướng dương",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 903,
+    "word": "lily",
+    "meaning": "hoa huệ tây",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 904,
+    "word": "orchid",
+    "meaning": "hoa lan",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 905,
+    "word": "daisy",
+    "meaning": "hoa cúc",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 906,
+    "word": "dandelion",
+    "meaning": "hoa bồ công anh",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 907,
+    "word": "tulip",
+    "meaning": "hoa tulip",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 908,
+    "word": "water lily",
+    "meaning": "hoa súng",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 909,
+    "word": "lotus",
+    "meaning": "hoa sen",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 910,
+    "word": "hydrangea",
+    "meaning": "hoa cẩm tú cầu",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 911,
+    "word": "jasmine",
+    "meaning": "hoa nhài",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 912,
+    "word": "camellia",
+    "meaning": "hoa trà",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 913,
+    "word": "peony",
+    "meaning": "hoa mẫu đơn",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 914,
+    "word": "carnation",
+    "meaning": "hoa cẩm chướng",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 915,
+    "word": "tree",
+    "meaning": "cây",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 916,
+    "word": "leaf",
+    "meaning": "lá",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 917,
+    "word": "flower",
+    "meaning": "hoa",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 918,
+    "word": "petal",
+    "meaning": "cánh hoa",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 919,
+    "word": "pollen",
+    "meaning": "phấn hoa",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 920,
+    "word": "thorn",
+    "meaning": "gai",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 921,
+    "word": "bud",
+    "meaning": "chồi",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 922,
+    "word": "branch",
+    "meaning": "cành cây",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 923,
+    "word": "sap",
+    "meaning": "nhựa cây",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 924,
+    "word": "root",
+    "meaning": "rễ cây",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 925,
+    "word": "bark",
+    "meaning": "vỏ cây",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 926,
+    "word": "cactus",
+    "meaning": "xương rồng",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 927,
+    "word": "succulent",
+    "meaning": "sen đá",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 928,
+    "word": "aloe vera",
+    "meaning": "nha đam",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 929,
+    "word": "bamboo",
+    "meaning": "cây tre",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 930,
+    "word": "sugar cane",
+    "meaning": "cây mía",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 931,
+    "word": "pine",
+    "meaning": "cây thông",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 932,
+    "word": "willow",
+    "meaning": "cây liễu",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 933,
+    "word": "maple",
+    "meaning": "cây phong",
+    "example": "",
+    "topic": "Plants"
+  },
+  {
+    "stt": 934,
+    "word": "weather",
+    "meaning": "thời tiết",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 935,
+    "word": "weather forecast",
+    "meaning": "dự báo thời tiết",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 936,
+    "word": "windy",
+    "meaning": "nhiều gió",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 937,
+    "word": "haze",
+    "meaning": "màn sương mỏng",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 938,
+    "word": "breeze",
+    "meaning": "gió nhẹ",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 939,
+    "word": "gloomy",
+    "meaning": "trời ảm đạm",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 940,
+    "word": "cloudy",
+    "meaning": "trời nhiều mây",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 941,
+    "word": "sunny",
+    "meaning": "trời nắng",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 942,
+    "word": "foggy",
+    "meaning": "có sương mù",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 943,
+    "word": "humid",
+    "meaning": "ẩm",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 944,
+    "word": "bright",
+    "meaning": "sáng mạnh",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 945,
+    "word": "wet",
+    "meaning": "ẩm ướt",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 946,
+    "word": "dry",
+    "meaning": "hanh khô",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 947,
+    "word": "mild",
+    "meaning": "ôn hòa, ấm áp",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 948,
+    "word": "clear",
+    "meaning": "trời trong trẻo",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 949,
+    "word": "climate",
+    "meaning": "khí hậu",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 950,
+    "word": "overcast",
+    "meaning": "âm u",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 951,
+    "word": "lightning",
+    "meaning": "tia chớp",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 952,
+    "word": "snow",
+    "meaning": "tuyết",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 953,
+    "word": "drizzle",
+    "meaning": "mưa phùn",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 954,
+    "word": "hail",
+    "meaning": "mưa đá",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 955,
+    "word": "thunderstorm",
+    "meaning": "bão tố có sấm sét",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 956,
+    "word": "snowflake",
+    "meaning": "bông hoa tuyết",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 957,
+    "word": "snowstorm",
+    "meaning": "bão tuyết",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 958,
+    "word": "blizzard",
+    "meaning": "cơn bão tuyết",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 959,
+    "word": "damp",
+    "meaning": "ẩm thấp, ẩm ướt",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 960,
+    "word": "thunder",
+    "meaning": "sấm sét",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 961,
+    "word": "rain",
+    "meaning": "mưa",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 962,
+    "word": "shower",
+    "meaning": "mưa rào",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 963,
+    "word": "rainstorm",
+    "meaning": "mưa bão",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 964,
+    "word": "flood",
+    "meaning": "lũ lụt",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 965,
+    "word": "gale",
+    "meaning": "gió giật",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 966,
+    "word": "tornado",
+    "meaning": "lốc xoáy",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 967,
+    "word": "typhoon",
+    "meaning": "bão nhiệt đới",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 968,
+    "word": "storm",
+    "meaning": "dông bão",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 969,
+    "word": "rainbow",
+    "meaning": "cầu vồng",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 970,
+    "word": "blustery",
+    "meaning": "cơn gió mạnh",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 971,
+    "word": "mist",
+    "meaning": "sương",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 972,
+    "word": "hurricane",
+    "meaning": "siêu bão",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 973,
+    "word": "frosty",
+    "meaning": "lạnh băng",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 974,
+    "word": "hot",
+    "meaning": "nóng",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 975,
+    "word": "boiling hot",
+    "meaning": "rất nóng",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 976,
+    "word": "cold",
+    "meaning": "lạnh",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 977,
+    "word": "chilly",
+    "meaning": "lạnh thấu xương",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 978,
+    "word": "freeze",
+    "meaning": "đóng băng",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 979,
+    "word": "temperature",
+    "meaning": "nhiệt độ",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 980,
+    "word": "thermometer",
+    "meaning": "nhiệt kế",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 981,
+    "word": "degree",
+    "meaning": "độ",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 982,
+    "word": "Fahrenheit",
+    "meaning": "độ F",
+    "example": "",
+    "topic": "Weather"
+  },
+  {
+    "stt": 983,
+    "word": "Celsius",
+    "meaning": "độ C",
+    "example": "",
+    "topic": "Weather"
+  }
+]
