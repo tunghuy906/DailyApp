@@ -1,0 +1,14 @@
+E:\DailyApp\DailyPlannerApp\bin\Release\net8.0-windows\DailyPlannerApp.exe
+E:\DailyApp\DailyPlannerApp\bin\Release\net8.0-windows\DailyPlannerApp.deps.json
+E:\DailyApp\DailyPlannerApp\bin\Release\net8.0-windows\DailyPlannerApp.runtimeconfig.json
+E:\DailyApp\DailyPlannerApp\bin\Release\net8.0-windows\DailyPlannerApp.dll
+E:\DailyApp\DailyPlannerApp\bin\Release\net8.0-windows\DailyPlannerApp.pdb
+E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\DailyPlannerApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\DailyPlannerApp.AssemblyInfoInputs.cache
+E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\DailyPlannerApp.AssemblyInfo.cs
+E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\DailyPlannerApp.csproj.CoreCompileInputs.cache
+E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\DailyPlannerApp.dll
+E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\refint\DailyPlannerApp.dll
+E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\DailyPlannerApp.pdb
+E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\DailyPlannerApp.genruntimeconfig.cache
+E:\DailyApp\DailyPlannerApp\obj\Release\net8.0-windows\ref\DailyPlannerApp.dll
