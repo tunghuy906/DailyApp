@@ -151,9 +151,13 @@ namespace DailyPlannerApp
             };
 
             // Header style
-            grid.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(241, 245, 249);
-            grid.ColumnHeadersDefaultCellStyle.ForeColor = C_SUBTEXT;
-            grid.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+            grid.ColumnHeadersVisible = true;
+            grid.EnableHeadersVisualStyles = false;
+
+            grid.ColumnHeadersDefaultCellStyle.BackColor = C_HEADER; // xanh đậm
+            grid.ColumnHeadersDefaultCellStyle.ForeColor = Color.White; // chữ trắng
+            grid.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            grid.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; grid.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9, FontStyle.Bold);
             grid.ColumnHeadersDefaultCellStyle.Padding = new Padding(8, 0, 0, 0);
             grid.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
 
@@ -381,6 +385,7 @@ namespace DailyPlannerApp
         // ═══════════════════════════════════════════════════════════════
         void LoadData()
         {
+            grid.AutoGenerateColumns = true;
             if (grid.DataSource == null)
                 grid.DataSource = tasks;
 
@@ -399,9 +404,9 @@ namespace DailyPlannerApp
                 grid.Columns["Description"].Visible = false;
 
             // Hoặc nếu bạn vẫn muốn giữ cột nhưng chỉ hiển thị tiêu đề ngắn gọn:
-            // grid.Columns["Description"].Visible = true;
-            // grid.Columns["Description"].HeaderText = "Description";
-            // grid.Columns["Description"].DefaultCellStyle.Format = ""; // hoặc dùng cell formatting
+            grid.Columns["Description"].Visible = true;
+            grid.Columns["Description"].HeaderText = "Description";
+            grid.Columns["Description"].DefaultCellStyle.Format = ""; // hoặc dùng cell formatting
 
             // Hide các cột thừa khác
             if (grid.Columns.Contains("SubTasks")) grid.Columns["SubTasks"].Visible = false;
