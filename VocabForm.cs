@@ -460,10 +460,43 @@ namespace DailyPlannerApp
 
         void SetupColumns()
         {
-            foreach (DataGridViewColumn c in grid.Columns) c.Visible = false;
-            ShowCol("Word", "Word", 130); ShowCol("Meaning", "Meaning (VN)", 170);
-            ShowCol("Example", "Example", 250); ShowCol("AddedDate", "Added", 80);
+            foreach (DataGridViewColumn c in grid.Columns)
+                c.Visible = false;
+
+            ShowCol("Word", "Word", 130);
+            ShowCol("Meaning", "Meaning (VN)", 170);
+            ShowCol("Example", "Example", 250);
+            ShowCol("AddedDate", "Added", 80);
+
             grid.Columns["AddedDate"].DefaultCellStyle.Format = "dd/MM/yy";
+
+            // ====================== KHÓA CỘT & HÀNG ======================
+
+            // Không cho kéo cột
+            grid.AllowUserToResizeColumns = false;
+
+            // Không cho kéo chiều cao hàng
+            grid.AllowUserToResizeRows = false;
+
+            // Không cho tự động thay đổi chiều cao header
+            grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+
+            // Khóa từng cột (rất quan trọng)
+            foreach (DataGridViewColumn col in grid.Columns)
+            {
+                if (col.Visible)
+                {
+                    col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                    col.Resizable = DataGridViewTriState.False;      // Cấm resize cột
+                    col.MinimumWidth = col.Width;
+                    //col.MaximumWidth = col.Width;                    // Giữ nguyên width
+                }
+            }
+
+            // Khóa chiều cao từng hàng
+            grid.RowTemplate.Height = 32;                        // Giữ nguyên chiều cao bạn đã set
+            grid.AllowUserToResizeRows = false;
+            grid.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
         }
 
         void ShowCol(string name, string header, int width)
