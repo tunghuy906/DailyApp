@@ -147,7 +147,8 @@ namespace DailyPlannerApp
                 ColumnHeadersHeightSizeMode   = DataGridViewColumnHeadersHeightSizeMode.DisableResizing,
                 ColumnHeadersHeight           = 38,
                 RowTemplate                   = { Height = 34 },
-                CellBorderStyle               = DataGridViewCellBorderStyle.SingleHorizontal
+                CellBorderStyle               = DataGridViewCellBorderStyle.SingleHorizontal,
+                AutoGenerateColumns           = false
             };
 
             // Header style
@@ -365,35 +366,73 @@ namespace DailyPlannerApp
         // ═══════════════════════════════════════════════════════════════
         void LoadData()
         {
+            // Tạo cột thủ công — tránh DataGridView tự sinh cột từ List<T>
+            grid.Columns.Clear();
+
+            // Cột checkbox ✓
+            var colDone = new DataGridViewCheckBoxColumn
+            {
+                DataPropertyName = "IsDone",
+                HeaderText       = "✓",
+                Name             = "IsDone",
+                FillWeight       = 28,
+                ReadOnly         = false,
+                AutoSizeMode     = DataGridViewAutoSizeColumnMode.Fill
+            };
+            grid.Columns.Add(colDone);
+
+            // Cột Title
+            var colTitle = new DataGridViewTextBoxColumn
+            {
+                DataPropertyName = "Title",
+                HeaderText       = "Title",
+                Name             = "Title",
+                FillWeight       = 170,
+                ReadOnly         = true,
+                AutoSizeMode     = DataGridViewAutoSizeColumnMode.Fill
+            };
+            grid.Columns.Add(colTitle);
+
+            // Cột Sub-tasks (Description)
+            var colDesc = new DataGridViewTextBoxColumn
+            {
+                DataPropertyName = "Description",
+                HeaderText       = "Sub-tasks",
+                Name             = "Description",
+                FillWeight       = 200,
+                ReadOnly         = true,
+                AutoSizeMode     = DataGridViewAutoSizeColumnMode.Fill
+            };
+            grid.Columns.Add(colDesc);
+
+            // Cột Start
+            var colStart = new DataGridViewTextBoxColumn
+            {
+                DataPropertyName                 = "StartTime",
+                HeaderText                       = "Start",
+                Name                             = "StartTime",
+                FillWeight                       = 80,
+                ReadOnly                         = true,
+                AutoSizeMode                     = DataGridViewAutoSizeColumnMode.Fill,
+                DefaultCellStyle                 = { Format = "dd/MM  HH:mm" }
+            };
+            grid.Columns.Add(colStart);
+
+            // Cột Deadline
+            var colDeadline = new DataGridViewTextBoxColumn
+            {
+                DataPropertyName                 = "Deadline",
+                HeaderText                       = "Deadline",
+                Name                             = "Deadline",
+                FillWeight                       = 80,
+                ReadOnly                         = true,
+                AutoSizeMode                     = DataGridViewAutoSizeColumnMode.Fill,
+                DefaultCellStyle                 = { Format = "dd/MM  HH:mm" }
+            };
+            grid.Columns.Add(colDeadline);
+
             if (grid.DataSource == null)
                 grid.DataSource = tasks;
-
-            grid.Columns["IsDone"].HeaderText      = "✓";
-            grid.Columns["Title"].HeaderText       = "Title";
-            grid.Columns["Description"].HeaderText = "Sub-tasks";
-            grid.Columns["StartTime"].HeaderText   = "Start";
-            grid.Columns["Deadline"].HeaderText    = "Deadline";
-
-            grid.Columns["StartTime"].DefaultCellStyle.Format  = "dd/MM  HH:mm";
-            grid.Columns["Deadline"].DefaultCellStyle.Format   = "dd/MM  HH:mm";
-
-            // Hide SubTasks / SubTaskDone columns if present
-            if (grid.Columns.Contains("SubTasks"))     grid.Columns["SubTasks"].Visible = false;
-            if (grid.Columns.Contains("SubTaskDone"))  grid.Columns["SubTaskDone"].Visible = false;
-
-            grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-            // Column widths (FillWeight)
-            grid.Columns["IsDone"].FillWeight      = 30;
-            grid.Columns["Title"].FillWeight       = 160;
-            grid.Columns["Description"].FillWeight = 200;
-            grid.Columns["StartTime"].FillWeight   = 80;
-            grid.Columns["Deadline"].FillWeight    = 80;
-
-            foreach (DataGridViewColumn col in grid.Columns)
-                col.ReadOnly = true;
-
-            grid.Columns["IsDone"].ReadOnly = false;
         }
 
         // ═══════════════════════════════════════════════════════════════

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DailyApp\\DailyApp\\DailyPlannerApp.csproj": {}
+    "D:\\DailyApp\\DailyPlannerApp.csproj": {}
   },
   "projects": {
-    "D:\\DailyApp\\DailyApp\\DailyPlannerApp.csproj": {
+    "D:\\DailyApp\\DailyPlannerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DailyApp\\DailyApp\\DailyPlannerApp.csproj",
+        "projectUniqueName": "D:\\DailyApp\\DailyPlannerApp.csproj",
         "projectName": "DailyPlannerApp",
-        "projectPath": "D:\\DailyApp\\DailyApp\\DailyPlannerApp.csproj",
+        "projectPath": "D:\\DailyApp\\DailyPlannerApp.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "D:\\DailyApp\\DailyApp\\obj\\",
+        "outputPath": "D:\\DailyApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
