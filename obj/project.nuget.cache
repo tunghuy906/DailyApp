@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "mtFyix432og=",
   "success": true,
   "projectFilePath": "D:\\DailyApp\\DailyPlannerApp.csproj",
-=======
-  "dgSpecHash": "UT7lF3umVos=",
-  "success": true,
-  "projectFilePath": "E:\\DailyApp\\DailyPlannerApp\\DailyPlannerApp.csproj",
->>>>>>> c7c61501ebfcac497336f3ade6a65f2bee782d42
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\DailyApp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

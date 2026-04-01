@@ -8,8 +8,15 @@ namespace DailyPlannerApp
         [STAThread]
         static void Main()
         {
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            try
+            {
+                ApplicationConfiguration.Initialize();
+                Application.Run(new Form1());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}\n\n{ex.StackTrace}", "Application Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
