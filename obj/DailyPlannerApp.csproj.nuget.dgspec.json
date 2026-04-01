@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\DailyApp\\DailyPlannerApp.csproj": {}
   },
   "projects": {
@@ -12,9 +13,22 @@
         "projectPath": "D:\\DailyApp\\DailyPlannerApp.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
         "outputPath": "D:\\DailyApp\\obj\\",
+=======
+    "E:\\DailyApp\\DailyPlannerApp\\DailyPlannerApp.csproj": {}
+  },
+  "projects": {
+    "E:\\DailyApp\\DailyPlannerApp\\DailyPlannerApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\DailyApp\\DailyPlannerApp\\DailyPlannerApp.csproj",
+        "projectName": "DailyPlannerApp",
+        "projectPath": "E:\\DailyApp\\DailyPlannerApp\\DailyPlannerApp.csproj",
+        "packagesPath": "C:\\Users\\tungh\\.nuget\\packages\\",
+        "outputPath": "E:\\DailyApp\\DailyPlannerApp\\obj\\",
+>>>>>>> c7c61501ebfcac497336f3ade6a65f2bee782d42
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\tungh\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"

@@ -13,15 +13,15 @@ namespace DailyPlannerApp
     public partial class Form1 : Form
     {
         // ── Palette ────────────────────────────────────────────────────
-        static readonly Color C_BG        = Color.FromArgb(245, 246, 250); // nền app
-        static readonly Color C_SIDEBAR   = Color.FromArgb(255, 255, 255); // sidebar trắng
-        static readonly Color C_HEADER    = Color.FromArgb(37,  99, 235);  // xanh đậm
-        static readonly Color C_ACCENT    = Color.FromArgb(59, 130, 246);  // xanh nhạt
-        static readonly Color C_DANGER    = Color.FromArgb(220,  38,  38);
-        static readonly Color C_TEXT      = Color.FromArgb(30,  41,  59);
-        static readonly Color C_SUBTEXT   = Color.FromArgb(100, 116, 139);
-        static readonly Color C_BORDER    = Color.FromArgb(226, 232, 240);
-        static readonly Color C_ROW_ALT   = Color.FromArgb(248, 250, 252);
+        static readonly Color C_BG = Color.FromArgb(245, 246, 250); // nền app
+        static readonly Color C_SIDEBAR = Color.FromArgb(255, 255, 255); // sidebar trắng
+        static readonly Color C_HEADER = Color.FromArgb(37, 99, 235);  // xanh đậm
+        static readonly Color C_ACCENT = Color.FromArgb(59, 130, 246);  // xanh nhạt
+        static readonly Color C_DANGER = Color.FromArgb(220, 38, 38);
+        static readonly Color C_TEXT = Color.FromArgb(30, 41, 59);
+        static readonly Color C_SUBTEXT = Color.FromArgb(100, 116, 139);
+        static readonly Color C_BORDER = Color.FromArgb(226, 232, 240);
+        static readonly Color C_ROW_ALT = Color.FromArgb(248, 250, 252);
 
         // ── Fields ─────────────────────────────────────────────────────
         TextBox txtTitle;
@@ -59,20 +59,20 @@ namespace DailyPlannerApp
         // ═══════════════════════════════════════════════════════════════
         void InitUI()
         {
-            Text            = "Daily Planner";
-            Width           = 900;
-            Height          = 650;
-            MinimumSize     = new Size(900, 650);
-            BackColor       = C_BG;
-            Font            = new Font("Segoe UI", 10);
-            StartPosition   = FormStartPosition.CenterScreen;
+            Text = "Daily Planner";
+            Width = 900;
+            Height = 650;
+            MinimumSize = new Size(900, 650);
+            BackColor = C_BG;
+            Font = new Font("Segoe UI", 10);
+            StartPosition = FormStartPosition.CenterScreen;
 
             // ── Header bar ─────────────────────────────────────────────
             var header = new Panel
             {
-                Dock      = DockStyle.Top,
-                Height    = 56,
-                BackColor = Color.Gray
+                Dock = DockStyle.Top,
+                Height = 56,
+                BackColor = Color.DarkBlue
             };
             header.Paint += (s, e) =>
             {
@@ -83,20 +83,20 @@ namespace DailyPlannerApp
 
             var lblAppName = new Label
             {
-                Text      = "Daily Planner",
+                Text = "Daily Planner",
                 ForeColor = Color.GreenYellow,
-                Font      = new Font("Segoe UI", 15, FontStyle.Bold),
-                Dock      = DockStyle.Left,
-                Width     = 240,
+                Font = new Font("Segoe UI", 15, FontStyle.Bold),
+                Dock = DockStyle.Left,
+                Width = 240,
                 TextAlign = ContentAlignment.MiddleLeft,
-                Padding   = new Padding(10, 0, 0, 0)
+                Padding = new Padding(10, 0, 0, 0)
             };
 
             lblClock = new Label
             {
                 ForeColor = Color.White,
-                Font      = new Font("Segoe UI", 14, FontStyle.Regular),
-                Dock      = DockStyle.Fill,
+                Font = new Font("Segoe UI", 14, FontStyle.Regular),
+                Dock = DockStyle.Fill,
                 TextAlign = ContentAlignment.MiddleLeft
             };
 
@@ -107,10 +107,10 @@ namespace DailyPlannerApp
             // ── Sidebar (left) ─────────────────────────────────────────
             var sidebar = new Panel
             {
-                Dock      = DockStyle.Left,
-                Width     = 240,
+                Dock = DockStyle.Left,
+                Width = 240,
                 BackColor = C_SIDEBAR,
-                Padding   = new Padding(0)
+                Padding = new Padding(0)
             };
             sidebar.Paint += (s, e) =>
             {
@@ -123,15 +123,16 @@ namespace DailyPlannerApp
             // ── Main content area ──────────────────────────────────────
             var content = new Panel
             {
-                Dock      = DockStyle.Fill,
+                Dock = DockStyle.Fill,
                 BackColor = C_BG,
-                Padding   = new Padding(16)
+                Padding = new Padding(16)
             };
             Controls.Add(content);
 
             // Grid
             grid = new DataGridView
             {
+<<<<<<< HEAD
                 Dock                          = DockStyle.Fill,
                 BackgroundColor               = Color.White,
                 BorderStyle                   = BorderStyle.None,
@@ -149,29 +150,51 @@ namespace DailyPlannerApp
                 RowTemplate                   = { Height = 34 },
                 CellBorderStyle               = DataGridViewCellBorderStyle.SingleHorizontal,
                 AutoGenerateColumns           = false
+=======
+                Dock = DockStyle.Fill,
+                BackgroundColor = Color.White,
+                BorderStyle = BorderStyle.None,
+                RowHeadersVisible = false,
+                AllowUserToAddRows = false,
+                AllowUserToDeleteRows = false,
+                AllowUserToResizeRows = false,
+                AllowUserToResizeColumns = false,
+                SelectionMode = DataGridViewSelectionMode.FullRowSelect,
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
+                EnableHeadersVisualStyles = false,
+                GridColor = C_BORDER,
+                ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing,
+                ColumnHeadersHeight = 38,
+                RowTemplate = { Height = 34 },
+                CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
+>>>>>>> c7c61501ebfcac497336f3ade6a65f2bee782d42
             };
 
             // Header style
-            grid.ColumnHeadersDefaultCellStyle.BackColor  = Color.FromArgb(241, 245, 249);
-            grid.ColumnHeadersDefaultCellStyle.ForeColor  = C_SUBTEXT;
-            grid.ColumnHeadersDefaultCellStyle.Font       = new Font("Segoe UI", 9, FontStyle.Bold);
-            grid.ColumnHeadersDefaultCellStyle.Padding    = new Padding(8, 0, 0, 0);
-            grid.ColumnHeadersBorderStyle                 = DataGridViewHeaderBorderStyle.Single;
+            grid.ColumnHeadersVisible = true;
+            grid.EnableHeadersVisualStyles = false;
+
+            grid.ColumnHeadersDefaultCellStyle.BackColor = C_HEADER; // xanh đậm
+            grid.ColumnHeadersDefaultCellStyle.ForeColor = Color.White; // chữ trắng
+            grid.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            grid.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; grid.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+            grid.ColumnHeadersDefaultCellStyle.Padding = new Padding(8, 0, 0, 0);
+            grid.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
 
             // Cell style
-            grid.DefaultCellStyle.Font                  = new Font("Segoe UI", 10);
-            grid.DefaultCellStyle.ForeColor             = C_TEXT;
-            grid.DefaultCellStyle.BackColor             = Color.White;
-            grid.DefaultCellStyle.SelectionBackColor    = Color.FromArgb(219, 234, 254);
-            grid.DefaultCellStyle.SelectionForeColor    = Color.FromArgb(30, 64, 175);
-            grid.DefaultCellStyle.Padding               = new Padding(6, 0, 0, 0);
+            grid.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+            grid.DefaultCellStyle.ForeColor = C_TEXT;
+            grid.DefaultCellStyle.BackColor = Color.White;
+            grid.DefaultCellStyle.SelectionBackColor = Color.FromArgb(219, 234, 254);
+            grid.DefaultCellStyle.SelectionForeColor = Color.FromArgb(30, 64, 175);
+            grid.DefaultCellStyle.Padding = new Padding(6, 0, 0, 0);
 
             grid.AlternatingRowsDefaultCellStyle.BackColor = C_ROW_ALT;
 
-            grid.RowPrePaint              += Grid_RowPrePaint;
-            grid.CellValueChanged         += Grid_CellValueChanged;
+            grid.RowPrePaint += Grid_RowPrePaint;
+            grid.CellValueChanged += Grid_CellValueChanged;
             grid.CurrentCellDirtyStateChanged += Grid_CurrentCellDirtyStateChanged;
-            grid.CellDoubleClick          += Grid_CellDoubleClick;
+            grid.CellDoubleClick += Grid_CellDoubleClick;
 
             content.Controls.Add(grid);
 
@@ -194,14 +217,16 @@ namespace DailyPlannerApp
             sidebar.Controls.Add(SidebarFieldLabel("Sub-tasks  (one per line)", y)); y += 20;
             txtDescription = new TextBox
             {
-                Left        = 10, Top = y,
-                Width       = 208, Height = 100,
-                Multiline   = true,
-                ScrollBars  = ScrollBars.Vertical,
-                Font        = new Font("Segoe UI", 11f),
+                Left = 10,
+                Top = y,
+                Width = 208,
+                Height = 100,
+                Multiline = true,
+                ScrollBars = ScrollBars.Vertical,
+                Font = new Font("Segoe UI", 11f),
                 BorderStyle = BorderStyle.FixedSingle,
-                BackColor   = Color.White,
-                ForeColor   = C_TEXT
+                BackColor = Color.White,
+                ForeColor = C_TEXT
             };
             sidebar.Controls.Add(txtDescription); y += 110;
 
@@ -216,14 +241,16 @@ namespace DailyPlannerApp
             // Add button
             btnAdd = new Button
             {
-                Left      = 16, Top = y,
-                Width     = 208, Height = 36,
-                Text      = "＋  Add Task",
-                Font      = new Font("Segoe UI", 10, FontStyle.Bold),
+                Left = 16,
+                Top = y,
+                Width = 208,
+                Height = 36,
+                Text = "＋  Add Task",
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 BackColor = C_ACCENT,
                 ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat,
-                Cursor    = Cursors.Hand
+                Cursor = Cursors.Hand
             };
             btnAdd.FlatAppearance.BorderSize = 0;
             btnAdd.Click += BtnAdd_Click;
@@ -236,16 +263,18 @@ namespace DailyPlannerApp
             // Delete button
             var btnDelete = new Button
             {
-                Left      = 16, Top = y,
-                Width     = 208, Height = 34,
-                Text      = "🗑  Delete Selected",
-                Font      = new Font("Segoe UI", 9.5f, FontStyle.Bold),
+                Left = 16,
+                Top = y,
+                Width = 208,
+                Height = 34,
+                Text = "🗑  Delete Selected",
+                Font = new Font("Segoe UI", 9.5f, FontStyle.Bold),
                 BackColor = Color.FromArgb(254, 242, 242),
                 ForeColor = C_DANGER,
                 FlatStyle = FlatStyle.Flat,
-                Cursor    = Cursors.Hand
+                Cursor = Cursors.Hand
             };
-            btnDelete.FlatAppearance.BorderSize  = 1;
+            btnDelete.FlatAppearance.BorderSize = 1;
             btnDelete.FlatAppearance.BorderColor = Color.FromArgb(254, 202, 202);
             btnDelete.Click += (s, e) =>
             {
@@ -261,16 +290,18 @@ namespace DailyPlannerApp
             // Vocab button
             var btnVocab = new Button
             {
-                Left      = 16, Top = y,
-                Width     = 208, Height = 34,
-                Text      = "📖  Vocabulary",
-                Font      = new Font("Segoe UI", 9.5f, FontStyle.Bold),
+                Left = 16,
+                Top = y,
+                Width = 208,
+                Height = 34,
+                Text = "📖  Vocabulary",
+                Font = new Font("Segoe UI", 9.5f, FontStyle.Bold),
                 BackColor = Color.FromArgb(240, 249, 255),
                 ForeColor = Color.FromArgb(3, 105, 161),
                 FlatStyle = FlatStyle.Flat,
-                Cursor    = Cursors.Hand
+                Cursor = Cursors.Hand
             };
-            btnVocab.FlatAppearance.BorderSize  = 1;
+            btnVocab.FlatAppearance.BorderSize = 1;
             btnVocab.FlatAppearance.BorderColor = Color.FromArgb(186, 230, 253);
             btnVocab.Click += (s, e) => new VocabForm().Show();
             sidebar.Controls.Add(btnVocab);
@@ -288,9 +319,9 @@ namespace DailyPlannerApp
 
             sidebar.Controls.Add(SidebarFieldLabel("STATUS LEGEND", y)); y += 20;
 
-            LegendRow(sidebar, Color.FromArgb(254, 202, 202), "Overdue",   y); y += 22;
-            LegendRow(sidebar, Color.FromArgb(254, 240, 138), "Due soon",  y); y += 22;
-            LegendRow(sidebar, Color.FromArgb(187, 247, 208), "Done",      y); y += 22;
+            LegendRow(sidebar, Color.FromArgb(254, 202, 202), "Overdue", y); y += 22;
+            LegendRow(sidebar, Color.FromArgb(254, 240, 138), "Due soon", y); y += 22;
+            LegendRow(sidebar, Color.FromArgb(187, 247, 208), "Done", y); y += 22;
             LegendRow(sidebar, Color.FromArgb(226, 232, 240), "In progress", y);
         }
 
@@ -298,8 +329,10 @@ namespace DailyPlannerApp
         {
             var circle = new Label
             {
-                Left      = 16, Top = y + 2,
-                Width     = 12, Height = 12,
+                Left = 16,
+                Top = y + 2,
+                Width = 12,
+                Height = 12,
                 BackColor = dot
             };
             circle.Paint += (s, e) =>
@@ -310,10 +343,11 @@ namespace DailyPlannerApp
             };
             var lbl = new Label
             {
-                Left      = 34, Top = y,
-                Width     = 180,
-                Text      = text,
-                Font      = new Font("Segoe UI", 8.5f),
+                Left = 34,
+                Top = y,
+                Width = 180,
+                Text = text,
+                Font = new Font("Segoe UI", 8.5f),
                 ForeColor = C_SUBTEXT
             };
             parent.Controls.Add(circle);
@@ -323,42 +357,47 @@ namespace DailyPlannerApp
         // ── Sidebar helpers ────────────────────────────────────────────
         Label SidebarSectionLabel(string text, int top) => new Label
         {
-            Text      = text,
-            Left      = 16, Top = top,
-            Width     = 208,
-            Font      = new Font("Segoe UI", 8, FontStyle.Bold),
+            Text = text,
+            Left = 16,
+            Top = top,
+            Width = 208,
+            Font = new Font("Segoe UI", 8, FontStyle.Bold),
             ForeColor = C_ACCENT,
-            Height    = 20
+            Height = 20
         };
 
         Label SidebarFieldLabel(string text, int top) => new Label
         {
-            Text      = text,
-            Left      = 16, Top = top,
-            Width     = 208,
-            Font      = new Font("Segoe UI", 8.5f),
+            Text = text,
+            Left = 16,
+            Top = top,
+            Width = 208,
+            Font = new Font("Segoe UI", 8.5f),
             ForeColor = C_SUBTEXT,
-            Height    = 18
+            Height = 18
         };
 
         TextBox SidebarTextBox(int top, int width) => new TextBox
         {
-            Left        = 16, Top = top,
-            Width       = width, Height = 26,
-            Font        = new Font("Segoe UI", 10),
+            Left = 16,
+            Top = top,
+            Width = width,
+            Height = 26,
+            Font = new Font("Segoe UI", 10),
             BorderStyle = BorderStyle.FixedSingle,
-            BackColor   = Color.White,
-            ForeColor   = C_TEXT
+            BackColor = Color.White,
+            ForeColor = C_TEXT
         };
 
         DateTimePicker SidebarDatePicker(int top) => new DateTimePicker
         {
-            Left         = 16, Top = top,
-            Width        = 208,
-            Format       = DateTimePickerFormat.Custom,
+            Left = 16,
+            Top = top,
+            Width = 208,
+            Format = DateTimePickerFormat.Custom,
             CustomFormat = "dd/MM/yyyy  HH:mm",
-            ShowUpDown   = true,
-            Font         = new Font("Segoe UI", 9.5f)
+            ShowUpDown = true,
+            Font = new Font("Segoe UI", 9.5f)
         };
 
         // ═══════════════════════════════════════════════════════════════
@@ -366,6 +405,7 @@ namespace DailyPlannerApp
         // ═══════════════════════════════════════════════════════════════
         void LoadData()
         {
+<<<<<<< HEAD
             // Tạo cột thủ công — tránh DataGridView tự sinh cột từ List<T>
             grid.Columns.Clear();
 
@@ -433,6 +473,47 @@ namespace DailyPlannerApp
 
             if (grid.DataSource == null)
                 grid.DataSource = tasks;
+=======
+            grid.AutoGenerateColumns = true;
+            if (grid.DataSource == null)
+                grid.DataSource = tasks;
+
+            grid.Columns["IsDone"].HeaderText = "✓";
+            grid.Columns["Title"].HeaderText = "Title";
+            grid.Columns["Description"].HeaderText = "Sub-tasks";
+            grid.Columns["StartTime"].HeaderText = "Start";
+            grid.Columns["Deadline"].HeaderText = "Deadline";
+
+            grid.Columns["StartTime"].DefaultCellStyle.Format = "dd/MM  HH:mm";
+            grid.Columns["Deadline"].DefaultCellStyle.Format = "dd/MM  HH:mm";
+
+            // === SỬA Ở ĐÂY ===
+            // Ẩn hoàn toàn cột Description (khuyến nghị)
+            if (grid.Columns.Contains("Description"))
+                grid.Columns["Description"].Visible = false;
+
+            // Hoặc nếu bạn vẫn muốn giữ cột nhưng chỉ hiển thị tiêu đề ngắn gọn:
+            grid.Columns["Description"].Visible = true;
+            grid.Columns["Description"].HeaderText = "Description";
+            grid.Columns["Description"].DefaultCellStyle.Format = ""; // hoặc dùng cell formatting
+
+            // Hide các cột thừa khác
+            if (grid.Columns.Contains("SubTasks")) grid.Columns["SubTasks"].Visible = false;
+            if (grid.Columns.Contains("SubTaskDone")) grid.Columns["SubTaskDone"].Visible = false;
+
+            grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // Điều chỉnh tỷ lệ cột sau khi ẩn Description
+            grid.Columns["IsDone"].FillWeight = 25;
+            grid.Columns["Title"].FillWeight = 300;   // tăng tỷ lệ cho Title vì giờ nó quan trọng hơn
+            grid.Columns["StartTime"].FillWeight = 90;
+            grid.Columns["Deadline"].FillWeight = 90;
+
+            foreach (DataGridViewColumn col in grid.Columns)
+                col.ReadOnly = true;
+
+            grid.Columns["IsDone"].ReadOnly = false;
+>>>>>>> c7c61501ebfcac497336f3ade6a65f2bee782d42
         }
 
         // ═══════════════════════════════════════════════════════════════
@@ -448,12 +529,12 @@ namespace DailyPlannerApp
 
             tasks.Add(new TaskItem
             {
-                IsDone      = false,
-                Title       = txtTitle.Text.Trim(),
+                IsDone = false,
+                Title = txtTitle.Text.Trim(),
                 Description = txtDescription.Text,
-                StartTime   = dtStart.Value,
-                Deadline    = dtDeadline.Value,
-                SubTasks    = subTasks,
+                StartTime = dtStart.Value,
+                Deadline = dtDeadline.Value,
+                SubTasks = subTasks,
                 SubTaskDone = subTasks.Select(_ => false).ToList()
             });
 
@@ -469,7 +550,7 @@ namespace DailyPlannerApp
                 if (!task.IsDone && IsTimeToNotify(task.Deadline))
                 {
                     notify.BalloonTipTitle = "⏰ Task reminder";
-                    notify.BalloonTipText  = task.Title;
+                    notify.BalloonTipText = task.Title;
                     notify.ShowBalloonTip(3000);
                     grid.Refresh();
                 }
@@ -489,33 +570,33 @@ namespace DailyPlannerApp
 
         void Grid_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
-            var row  = grid.Rows[e.RowIndex];
+            var row = grid.Rows[e.RowIndex];
             var task = row.DataBoundItem as TaskItem;
             if (task == null) return;
 
             if (task.IsDone)
             {
-                row.DefaultCellStyle.BackColor  = Color.FromArgb(240, 253, 244);
-                row.DefaultCellStyle.ForeColor  = Color.FromArgb(134, 239, 172);
-                row.DefaultCellStyle.Font       = new Font(grid.Font, FontStyle.Strikeout);
+                row.DefaultCellStyle.BackColor = Color.FromArgb(240, 253, 244);
+                row.DefaultCellStyle.ForeColor = Color.FromArgb(134, 239, 172);
+                row.DefaultCellStyle.Font = new Font(grid.Font, FontStyle.Strikeout);
             }
             else if (task.Deadline < DateTime.Now)
             {
-                row.DefaultCellStyle.BackColor  = Color.FromArgb(255, 241, 242);
-                row.DefaultCellStyle.ForeColor  = C_TEXT;
-                row.DefaultCellStyle.Font       = new Font(grid.Font, FontStyle.Regular);
+                row.DefaultCellStyle.BackColor = Color.FromArgb(255, 241, 242);
+                row.DefaultCellStyle.ForeColor = C_TEXT;
+                row.DefaultCellStyle.Font = new Font(grid.Font, FontStyle.Regular);
             }
             else if ((task.Deadline - DateTime.Now).TotalHours <= 1)
             {
-                row.DefaultCellStyle.BackColor  = Color.FromArgb(254, 252, 232);
-                row.DefaultCellStyle.ForeColor  = C_TEXT;
-                row.DefaultCellStyle.Font       = new Font(grid.Font, FontStyle.Regular);
+                row.DefaultCellStyle.BackColor = Color.FromArgb(254, 252, 232);
+                row.DefaultCellStyle.ForeColor = C_TEXT;
+                row.DefaultCellStyle.Font = new Font(grid.Font, FontStyle.Regular);
             }
             else
             {
-                row.DefaultCellStyle.BackColor  = e.RowIndex % 2 == 0 ? Color.White : C_ROW_ALT;
-                row.DefaultCellStyle.ForeColor  = C_TEXT;
-                row.DefaultCellStyle.Font       = new Font(grid.Font, FontStyle.Regular);
+                row.DefaultCellStyle.BackColor = e.RowIndex % 2 == 0 ? Color.White : C_ROW_ALT;
+                row.DefaultCellStyle.ForeColor = C_TEXT;
+                row.DefaultCellStyle.Font = new Font(grid.Font, FontStyle.Regular);
             }
         }
 
@@ -548,38 +629,38 @@ namespace DailyPlannerApp
             string statusText; Color statusColor; Color statusBg;
             if (task.IsDone)
             {
-                statusText  = "✓  DONE";
+                statusText = "✓  DONE";
                 statusColor = Color.FromArgb(22, 163, 74);
-                statusBg    = Color.FromArgb(240, 253, 244);
+                statusBg = Color.FromArgb(240, 253, 244);
             }
             else if (task.Deadline < DateTime.Now)
             {
-                statusText  = "⚠  OVERDUE";
+                statusText = "⚠  OVERDUE";
                 statusColor = C_DANGER;
-                statusBg    = Color.FromArgb(255, 241, 242);
+                statusBg = Color.FromArgb(255, 241, 242);
             }
             else if ((task.Deadline - DateTime.Now).TotalHours <= 1)
             {
-                statusText  = "⏱  DUE SOON";
+                statusText = "⏱  DUE SOON";
                 statusColor = Color.FromArgb(202, 138, 4);
-                statusBg    = Color.FromArgb(254, 252, 232);
+                statusBg = Color.FromArgb(254, 252, 232);
             }
             else
             {
-                statusText  = "▶  IN PROGRESS";
+                statusText = "▶  IN PROGRESS";
                 statusColor = C_ACCENT;
-                statusBg    = Color.FromArgb(239, 246, 255);
+                statusBg = Color.FromArgb(239, 246, 255);
             }
 
             using var detailForm = new Form
             {
-                Text            = "Task Details",
-                Size            = new Size(540, 540),
-                StartPosition   = FormStartPosition.CenterParent,
+                Text = "Task Details",
+                Size = new Size(540, 540),
+                StartPosition = FormStartPosition.CenterParent,
                 FormBorderStyle = FormBorderStyle.FixedDialog,
-                MaximizeBox     = false,
-                MinimizeBox     = false,
-                BackColor       = Color.White
+                MaximizeBox = false,
+                MinimizeBox = false,
+                BackColor = Color.White
             };
 
             // Top accent bar
@@ -589,16 +670,18 @@ namespace DailyPlannerApp
             // Status badge
             var badge = new Panel
             {
-                Left      = 24, Top = 18,
-                Width     = 140, Height = 26,
+                Left = 24,
+                Top = 18,
+                Width = 140,
+                Height = 26,
                 BackColor = statusBg
             };
             var lblBadge = new Label
             {
-                Text      = statusText,
-                Dock      = DockStyle.Fill,
+                Text = statusText,
+                Dock = DockStyle.Fill,
                 TextAlign = ContentAlignment.MiddleCenter,
-                Font      = new Font("Segoe UI", 8.5f, FontStyle.Bold),
+                Font = new Font("Segoe UI", 8.5f, FontStyle.Bold),
                 ForeColor = statusColor
             };
             badge.Controls.Add(lblBadge);
@@ -612,11 +695,13 @@ namespace DailyPlannerApp
             // Title
             var lblTitle = new Label
             {
-                Text      = task.Title,
-                Font      = new Font("Segoe UI", 17, FontStyle.Bold),
+                Text = task.Title,
+                Font = new Font("Segoe UI", 17, FontStyle.Bold),
                 ForeColor = C_TEXT,
-                Left      = 24, Top = 52,
-                Width     = 490, Height = 42,
+                Left = 24,
+                Top = 52,
+                Width = 490,
+                Height = 42,
                 AutoEllipsis = true
             };
             detailForm.Controls.Add(lblTitle);
@@ -628,22 +713,27 @@ namespace DailyPlannerApp
             // Sub-task label
             var lblSubTitle = new Label
             {
-                Text      = "SUB-TASKS",
-                Font      = new Font("Segoe UI", 8, FontStyle.Bold),
+                Text = "SUB-TASKS",
+                Font = new Font("Segoe UI", 8, FontStyle.Bold),
                 ForeColor = C_ACCENT,
-                Left      = 24, Top = 106, Width = 490, Height = 18
+                Left = 24,
+                Top = 106,
+                Width = 490,
+                Height = 18
             };
             detailForm.Controls.Add(lblSubTitle);
 
             // Checklist
             var checklist = new CheckedListBox
             {
-                Left        = 24, Top = 128,
-                Width       = 490, Height = 160,
-                Font        = new Font("Segoe UI", 10),
+                Left = 24,
+                Top = 128,
+                Width = 490,
+                Height = 160,
+                Font = new Font("Segoe UI", 10),
                 BorderStyle = BorderStyle.FixedSingle,
-                BackColor   = Color.FromArgb(248, 250, 252),
-                ForeColor   = C_TEXT,
+                BackColor = Color.FromArgb(248, 250, 252),
+                ForeColor = C_TEXT,
                 CheckOnClick = true
             };
             if (task.SubTasks != null && task.SubTasks.Count > 0)
@@ -670,36 +760,40 @@ namespace DailyPlannerApp
             // Edit tasks button
             var btnEdit = new Button
             {
-                Text      = "✏  Edit Sub-tasks",
-                Left      = 24, Top = 298,
-                Width     = 150, Height = 32,
-                Font      = new Font("Segoe UI", 9, FontStyle.Bold),
+                Text = "✏  Edit Sub-tasks",
+                Left = 24,
+                Top = 298,
+                Width = 150,
+                Height = 32,
+                Font = new Font("Segoe UI", 9, FontStyle.Bold),
                 BackColor = Color.FromArgb(255, 247, 237),
                 ForeColor = Color.FromArgb(194, 65, 12),
                 FlatStyle = FlatStyle.Flat,
-                Cursor    = Cursors.Hand
+                Cursor = Cursors.Hand
             };
-            btnEdit.FlatAppearance.BorderSize  = 1;
+            btnEdit.FlatAppearance.BorderSize = 1;
             btnEdit.FlatAppearance.BorderColor = Color.FromArgb(254, 215, 170);
             btnEdit.Click += (s, ev) =>
             {
                 using var editForm = new Form
                 {
-                    Text            = "Edit Sub-tasks",
-                    Size            = new Size(500, 340),
-                    StartPosition   = FormStartPosition.CenterParent,
+                    Text = "Edit Sub-tasks",
+                    Size = new Size(500, 340),
+                    StartPosition = FormStartPosition.CenterParent,
                     FormBorderStyle = FormBorderStyle.FixedDialog,
-                    BackColor       = Color.White
+                    BackColor = Color.White
                 };
                 var txtEdit = new TextBox
                 {
-                    Left        = 20, Top = 20,
-                    Width       = 450, Height = 200,
-                    Multiline   = true,
-                    ScrollBars  = ScrollBars.Vertical,
-                    Font        = new Font("Segoe UI", 10),
+                    Left = 20,
+                    Top = 20,
+                    Width = 450,
+                    Height = 200,
+                    Multiline = true,
+                    ScrollBars = ScrollBars.Vertical,
+                    Font = new Font("Segoe UI", 10),
                     BorderStyle = BorderStyle.FixedSingle,
-                    Text        = task.Description ?? ""
+                    Text = task.Description ?? ""
                 };
                 var btnSave2 = MakePopupButton("💾  Save", Color.FromArgb(22, 163, 74), 236, 290, 130);
                 var btnCancelEdit = MakePopupButton("✖  Cancel", Color.FromArgb(107, 114, 128), 140, 290, 100);
@@ -709,9 +803,9 @@ namespace DailyPlannerApp
                     var newSubs = newText.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
                                         .Select(x => x.Trim()).Where(x => !string.IsNullOrWhiteSpace(x)).ToList();
                     task.Description = newText;
-                    task.SubTasks    = newSubs;
+                    task.SubTasks = newSubs;
                     task.SubTaskDone = newSubs.Select(_ => false).ToList();
-                    task.IsDone      = false;
+                    task.IsDone = false;
                     service.Save(tasks.ToList());
                     grid.Refresh();
                     checklist.Items.Clear();
@@ -734,18 +828,20 @@ namespace DailyPlannerApp
             };
             var lblStartInfo = new Label
             {
-                Text      = $"🟢  Start:     {task.StartTime:dd/MM/yyyy  HH:mm}",
-                Left      = 12, Top = 8,
-                Width     = 460,
-                Font      = new Font("Segoe UI", 10),
+                Text = $"🟢  Start:     {task.StartTime:dd/MM/yyyy  HH:mm}",
+                Left = 12,
+                Top = 8,
+                Width = 460,
+                Font = new Font("Segoe UI", 10),
                 ForeColor = C_TEXT
             };
             var lblDeadlineInfo = new Label
             {
-                Text      = $"🔴  Deadline:  {task.Deadline:dd/MM/yyyy  HH:mm}",
-                Left      = 12, Top = 30,
-                Width     = 460,
-                Font      = new Font("Segoe UI", 10),
+                Text = $"🔴  Deadline:  {task.Deadline:dd/MM/yyyy  HH:mm}",
+                Left = 12,
+                Top = 30,
+                Width = 460,
+                Font = new Font("Segoe UI", 10),
                 ForeColor = C_TEXT
             };
             infoPanel.Controls.Add(lblStartInfo);
@@ -764,14 +860,16 @@ namespace DailyPlannerApp
         Button MakePopupButton(string text, Color color, int left, int top, int width) =>
             new Button
             {
-                Text      = text,
-                Left      = left, Top = top,
-                Width     = width, Height = 36,
-                Font      = new Font("Segoe UI", 10, FontStyle.Bold),
+                Text = text,
+                Left = left,
+                Top = top,
+                Width = width,
+                Height = 36,
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 BackColor = color,
                 ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat,
-                Cursor    = Cursors.Hand,
+                Cursor = Cursors.Hand,
                 FlatAppearance = { BorderSize = 0 }
             };
     }
