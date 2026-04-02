@@ -34,6 +34,20 @@
       "Category": "Bills",
       "Note": "",
       "Date": "2026-04-02T00:00:00+07:00"
+    },
+    {
+      "Task": "B\u00E0n ph\u00EDm",
+      "Amount": 500000,
+      "Category": "Food",
+      "Note": "",
+      "Date": "2026-04-02T00:00:00+07:00"
+    },
+    {
+      "Task": "X\u0103ng xe",
+      "Amount": 50000,
+      "Category": "Transport",
+      "Note": "",
+      "Date": "2026-04-02T00:00:00+07:00"
     }
   ],
   "BudgetLimit": 5675000

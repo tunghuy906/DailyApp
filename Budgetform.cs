@@ -467,7 +467,26 @@ namespace DailyPlannerApp
             AddRow("Task:",     item.Task);                           iy += 26;
             AddRow("Date:",     item.Date.ToString("dd/MM/yyyy"));    iy += 26;
             AddRow("Category:", item.Category);                       iy += 26;
-            AddRow("Note:",     string.IsNullOrWhiteSpace(item.Note) ? "—" : item.Note); iy += 26;
+            popup.Controls.Add(new Label
+            {
+                Text = "Note:", Left = 24, Top = iy, Width = 100, Height = 22,
+                Font = new Font("Segoe UI", 9), ForeColor = C_SUBTEXT,
+                TextAlign = ContentAlignment.MiddleLeft
+            });
+            var txtNoteDetail = new TextBox
+            {
+                Text = string.IsNullOrWhiteSpace(item.Note) ? "—" : item.Note,
+                Left = 128, Top = iy, Width = 264, Height = 60,
+                Multiline = true,
+                ReadOnly = true,
+                ScrollBars = ScrollBars.Both,
+                Font = new Font("Segoe UI", 9.5f),
+                BackColor = Color.White,
+                ForeColor = C_TEXT,
+                BorderStyle = BorderStyle.FixedSingle
+            };
+            popup.Controls.Add(txtNoteDetail);
+            iy += 70;
 
             // Close button
             var btnClose = new Button
