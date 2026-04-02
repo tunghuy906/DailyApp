@@ -72,7 +72,7 @@ namespace DailyPlannerApp
         {
             Text            = "Daily Planner";
             Width           = 900;
-            Height          = 700;
+            Height          = 650;
             MinimumSize     = new Size(900, 650);
             BackColor       = C_BG;
             Font            = new Font("Segoe UI", 10);
@@ -227,33 +227,32 @@ namespace DailyPlannerApp
             dtDeadline = SidebarDatePicker(y);
             sidebar.Controls.Add(dtDeadline); y += 38;
 
+            // ── Row 1: Add + Delete side by side ──────────────────────
             btnAdd = new Button
             {
-                Left      = 16,
+                Left      = 12,
                 Top       = y,
-                Width     = 208,
-                Height    = 36,
-                Text      = "＋  Add Task",
-                Font      = new Font("Segoe UI", 10, FontStyle.Bold),
-                BackColor = Color.SkyBlue,
-                ForeColor = Color.White,
+                Width     = 100,
+                Height    = 34,
+                Text      = "＋ Add",
+                Font      = new Font("Segoe UI", 9.5f, FontStyle.Bold),
+                BackColor = Color.FromArgb(239, 246, 255),
+                ForeColor = Color.FromArgb(37, 99, 235),
                 FlatStyle = FlatStyle.Flat,
                 Cursor    = Cursors.Hand
             };
-            btnAdd.FlatAppearance.BorderSize = 0;
+            btnAdd.FlatAppearance.BorderSize  = 1;
+            btnAdd.FlatAppearance.BorderColor = Color.FromArgb(147, 197, 253);
             btnAdd.Click += BtnAdd_Click;
-            sidebar.Controls.Add(btnAdd); y += 46;
-
-            var div = new Panel { Left = 16, Top = y, Width = 208, Height = 1, BackColor = C_BORDER };
-            sidebar.Controls.Add(div); y += 12;
+            sidebar.Controls.Add(btnAdd);
 
             var btnDelete = new Button
             {
-                Left      = 16,
+                Left      = 118,
                 Top       = y,
-                Width     = 208,
+                Width     = 102,
                 Height    = 34,
-                Text      = "🗑  Delete Selected",
+                Text      = "🗑 Delete",
                 Font      = new Font("Segoe UI", 9.5f, FontStyle.Bold),
                 BackColor = Color.FromArgb(254, 242, 242),
                 ForeColor = C_DANGER,
@@ -271,15 +270,16 @@ namespace DailyPlannerApp
                     service.Save(tasks.ToList());
                 }
             };
-            sidebar.Controls.Add(btnDelete); y += 44;
+            sidebar.Controls.Add(btnDelete); y += 42;
 
+            // ── Row 2: Vocabulary + Budget side by side ────────────────
             var btnVocab = new Button
             {
-                Left      = 16,
+                Left      = 12,
                 Top       = y,
-                Width     = 208,
+                Width     = 100,
                 Height    = 34,
-                Text      = "📖  Vocabulary",
+                Text      = "📖 Vocab",
                 Font      = new Font("Segoe UI", 9.5f, FontStyle.Bold),
                 BackColor = Color.FromArgb(240, 249, 255),
                 ForeColor = Color.FromArgb(3, 105, 161),
@@ -291,12 +291,30 @@ namespace DailyPlannerApp
             btnVocab.Click += (s, e) => new VocabForm().Show();
             sidebar.Controls.Add(btnVocab);
 
+            var btnBudget = new Button
+            {
+                Left      = 118,
+                Top       = y,
+                Width     = 102,
+                Height    = 34,
+                Text      = "💰 Budget",
+                Font      = new Font("Segoe UI", 9.5f, FontStyle.Bold),
+                BackColor = Color.FromArgb(240, 253, 244),
+                ForeColor = Color.FromArgb(22, 163, 74),
+                FlatStyle = FlatStyle.Flat,
+                Cursor    = Cursors.Hand
+            };
+            btnBudget.FlatAppearance.BorderSize  = 1;
+            btnBudget.FlatAppearance.BorderColor = Color.FromArgb(187, 247, 208);
+            btnBudget.Click += (s, e) => new BudgetForm().Show();
+            sidebar.Controls.Add(btnBudget); y += 42;
+
             BuildLegend(sidebar);
         }
 
         void BuildLegend(Panel sidebar)
         {
-            int y = sidebar.Height + 385;
+            int y = sidebar.Height + 325;
 
             var divTop = new Panel { Left = 16, Top = y, Width = 208, Height = 1, BackColor = C_BORDER };
             sidebar.Controls.Add(divTop);
@@ -342,13 +360,13 @@ namespace DailyPlannerApp
         Label SidebarFieldLabel(string text, int top) => new Label
         {
             Text = text, Left = 16, Top = top, Width = 208,
-            Font = new Font("Segoe UI", 8.5f),
+            Font = new Font("Segoe UI", 10f,FontStyle.Bold),
             ForeColor = C_SUBTEXT, Height = 18
         };
 
         TextBox SidebarTextBox(int top, int width) => new TextBox
         {
-            Left = 16, Top = top, Width = width, Height = 26,
+            Left = 10, Top = top, Width = width, Height = 26,
             Font = new Font("Segoe UI", 10),
             BorderStyle = BorderStyle.FixedSingle,
             BackColor = Color.White, ForeColor = C_TEXT
@@ -502,7 +520,16 @@ namespace DailyPlannerApp
             if (grid.Columns[e.ColumnIndex].Name == "IsDone")
             {
                 var task = grid.Rows[e.RowIndex].DataBoundItem as TaskItem;
-                if (task != null) service.Save(tasks.ToList());
+                if (task != null)
+                {
+                    // Tick toàn bộ sub-tasks theo trạng thái IsDone
+                    if (task.SubTaskDone != null && task.SubTaskDone.Count > 0)
+                        for (int i = 0; i < task.SubTaskDone.Count; i++)
+                            task.SubTaskDone[i] = task.IsDone;
+
+                    service.Save(tasks.ToList());
+                    grid.Refresh();
+                }
             }
         }
 

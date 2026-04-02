@@ -30,6 +30,7 @@ namespace DailyPlannerApp
         static readonly Color C_BORDER = Color.FromArgb(226, 232, 240);
         static readonly Color C_GREEN = Color.FromArgb(22, 163, 74);
         static readonly Color C_RED = Color.FromArgb(220, 38, 38);
+        static readonly Color C_YELLOW = Color.FromArgb(220, 163, 38);
 
         private readonly VocabService _service = new VocabService();
         private BindingList<VocabItem> _allItems;
@@ -59,6 +60,7 @@ namespace DailyPlannerApp
         private MasterWord _currentQuizWord;
         private int _quizCorrect, _quizTotal;
         private bool _quizRevealed;
+        private Button btnExit;
 
         public VocabForm()
         {
@@ -170,6 +172,8 @@ namespace DailyPlannerApp
             txtExample = TB(y, 218, 72, true); left.Controls.Add(txtExample); y += 82;
             btnSave = AB("Add Word", C_ACCENT, y, 218); btnSave.Click += BtnSave_Click; left.Controls.Add(btnSave); y += 42;
             btnClear = AB("Clear", C_SUB, y, 218); btnClear.Click += (s, e) => ClearInputs(); left.Controls.Add(btnClear);
+            btnExit = AB("Exit", C_YELLOW, y + 42, 218); btnExit.Click += (s, e) => Close(); left.Controls.Add(btnExit);
+
 
             var right = new Panel { Left = 252, Top = 0, Width = 650, Height = 500 };
             page.Controls.Add(right);
@@ -184,11 +188,12 @@ namespace DailyPlannerApp
                 Top = 25,
                 Width = 90,
                 Height = 30,
-                Text = "Delete",
+                Text = "🗑  Delete",
                 Font = new Font("Segoe UI", 9, FontStyle.Bold),
                 BackColor = Color.FromArgb(254, 242, 242),
                 ForeColor = C_RED,
-                FlatStyle = FlatStyle.Flat
+                FlatStyle = FlatStyle.Flat,
+                Cursor = Cursors.Hand
             };
             btnDelete.FlatAppearance.BorderSize = 1; btnDelete.FlatAppearance.BorderColor = Color.FromArgb(254, 202, 202);
             btnDelete.Click += BtnDelete_Click;
@@ -354,7 +359,7 @@ namespace DailyPlannerApp
 
             var btn = new Button
             {
-                Text = already ? "Written" : "Write it",
+                Text = already ? "✓ Written" : "Write it",
                 Left = 636,
                 Top = 13,
                 Width = 100,
@@ -591,7 +596,27 @@ namespace DailyPlannerApp
 
         Label FL(string text, int top) => new Label { Text = text, Left = 16, Top = top, Width = 218, Height = 18, Font = new Font("Segoe UI", 8.5f, FontStyle.Bold), ForeColor = C_SUB };
         TextBox TB(int top, int width, int height = 26, bool multiline = false) => new TextBox { Left = 16, Top = top, Width = width, Height = height, Multiline = multiline, Font = new Font("Segoe UI", 10), BorderStyle = BorderStyle.FixedSingle };
-        Button AB(string text, Color color, int top, int width) => new Button { Text = text, Left = 16, Top = top, Width = width, Height = 34, Font = new Font("Segoe UI", 9.5f, FontStyle.Bold), BackColor = color, ForeColor = Color.White, FlatStyle = FlatStyle.Flat, FlatAppearance = { BorderSize = 0 }, Cursor = Cursors.Hand };
+        Button AB(string text, Color color, int top, int width)
+        {
+            Color bgLight = Color.FromArgb(
+                (int)(color.R * 0.12 + 255 * 0.88),
+                (int)(color.G * 0.12 + 255 * 0.88),
+                (int)(color.B * 0.12 + 255 * 0.88));
+            Color borderLight = Color.FromArgb(
+                (int)(color.R * 0.35 + 255 * 0.65),
+                (int)(color.G * 0.35 + 255 * 0.65),
+                (int)(color.B * 0.35 + 255 * 0.65));
+            var btn = new Button
+            {
+                Text = text, Left = 16, Top = top, Width = width, Height = 34,
+                Font = new Font("Segoe UI", 9.5f, FontStyle.Bold),
+                BackColor = bgLight, ForeColor = color,
+                FlatStyle = FlatStyle.Flat, Cursor = Cursors.Hand
+            };
+            btn.FlatAppearance.BorderSize = 1;
+            btn.FlatAppearance.BorderColor = borderLight;
+            return btn;
+        }
         static Label PL(string text, int top) => new Label { Text = text, Left = 20, Top = top, Width = 370, Height = 18, Font = new Font("Segoe UI", 8.5f, FontStyle.Bold), ForeColor = Color.FromArgb(90, 90, 90) };
         static TextBox PT(int top, int width, int height = 26, bool multiline = false) => new TextBox { Left = 20, Top = top, Width = width, Height = height, Multiline = multiline, ScrollBars = multiline ? ScrollBars.Vertical : ScrollBars.None, Font = new Font("Segoe UI", 10), BorderStyle = BorderStyle.FixedSingle };
     }
