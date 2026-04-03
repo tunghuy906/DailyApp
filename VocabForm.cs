@@ -455,19 +455,59 @@ namespace DailyPlannerApp
         void ApplyFilter()
         {
             string kw = txtSearch?.Text.Trim().ToLower() ?? "";
-            var result = string.IsNullOrEmpty(kw) ? _allItems.ToList()
-                : _allItems.Where(v => v.Word.ToLower().Contains(kw) || v.Meaning.ToLower().Contains(kw) || v.Example.ToLower().Contains(kw)).ToList();
-            _viewItems = new BindingList<VocabItem>(result);
-            if (grid.DataSource == null) { grid.DataSource = _viewItems; SetupColumns(); }
-            else grid.DataSource = _viewItems;
-            lblCount.Text = string.Format("Total: {0} words   |   Showing: {1}", _allItems.Count, _viewItems.Count);
-        }
 
+            var result = string.IsNullOrEmpty(kw)
+                ? _allItems.ToList()
+                : _allItems.Where(v => v.Word.ToLower().Contains(kw)
+                                    || v.Meaning.ToLower().Contains(kw)
+                                    || v.Example.ToLower().Contains(kw)).ToList();
+
+            _viewItems = new BindingList<VocabItem>(result);
+
+            if (grid.DataSource == null)
+            {
+                grid.DataSource = _viewItems;
+                SetupColumns();
+            }
+            else
+            {
+                grid.DataSource = _viewItems;
+            }
+
+            // === Gán số thứ tự tự động ===
+            for (int i = 0; i < grid.Rows.Count; i++)
+            {
+                grid.Rows[i].Cells["STT"].Value = (i + 1).ToString();
+            }
+
+            lblCount.Text = string.Format("Total: {0} words   |   Showing: {1}",
+                _allItems.Count, _viewItems.Count);
+        }
         void SetupColumns()
         {
             foreach (DataGridViewColumn c in grid.Columns)
                 c.Visible = false;
 
+            // ==================== THÊM CỘT SỐ THỨ TỰ ====================
+            if (!grid.Columns.Contains("STT"))
+            {
+                var sttColumn = new DataGridViewTextBoxColumn
+                {
+                    Name = "STT",
+                    HeaderText = "STT",
+                    Width = 50,
+                    DefaultCellStyle = new DataGridViewCellStyle
+                    {
+                        Alignment = DataGridViewContentAlignment.MiddleCenter,
+                        ForeColor = C_SUB
+                    },
+                    ReadOnly = true,
+                    Resizable = DataGridViewTriState.False
+                };
+                grid.Columns.Insert(0, sttColumn);   // Chèn vào cột đầu tiên
+            }
+
+            // Các cột cũ
             ShowCol("Word", "Word", 130);
             ShowCol("Meaning", "Meaning (VN)", 170);
             ShowCol("Example", "Example", 250);
@@ -476,30 +516,22 @@ namespace DailyPlannerApp
             grid.Columns["AddedDate"].DefaultCellStyle.Format = "dd/MM/yy";
 
             // ====================== KHÓA CỘT & HÀNG ======================
-
-            // Không cho kéo cột
             grid.AllowUserToResizeColumns = false;
-
-            // Không cho kéo chiều cao hàng
             grid.AllowUserToResizeRows = false;
-
-            // Không cho tự động thay đổi chiều cao header
             grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 
-            // Khóa từng cột (rất quan trọng)
+            // Khóa từng cột visible
             foreach (DataGridViewColumn col in grid.Columns)
             {
                 if (col.Visible)
                 {
                     col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                    col.Resizable = DataGridViewTriState.False;      // Cấm resize cột
+                    col.Resizable = DataGridViewTriState.False;
                     col.MinimumWidth = col.Width;
-                    //col.MaximumWidth = col.Width;                    // Giữ nguyên width
                 }
             }
 
-            // Khóa chiều cao từng hàng
-            grid.RowTemplate.Height = 32;                        // Giữ nguyên chiều cao bạn đã set
+            grid.RowTemplate.Height = 32;
             grid.AllowUserToResizeRows = false;
             grid.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
         }
@@ -608,10 +640,16 @@ namespace DailyPlannerApp
                 (int)(color.B * 0.35 + 255 * 0.65));
             var btn = new Button
             {
-                Text = text, Left = 16, Top = top, Width = width, Height = 34,
+                Text = text,
+                Left = 16,
+                Top = top,
+                Width = width,
+                Height = 34,
                 Font = new Font("Segoe UI", 9.5f, FontStyle.Bold),
-                BackColor = bgLight, ForeColor = color,
-                FlatStyle = FlatStyle.Flat, Cursor = Cursors.Hand
+                BackColor = bgLight,
+                ForeColor = color,
+                FlatStyle = FlatStyle.Flat,
+                Cursor = Cursors.Hand
             };
             btn.FlatAppearance.BorderSize = 1;
             btn.FlatAppearance.BorderColor = borderLight;
