@@ -5,37 +5,60 @@ using System.Text.Json;
 
 namespace DailyPlannerApp
 {
-    // Wrapper lưu cả danh sách chi tiêu lẫn ngân sách tháng vào 1 file
     public class BudgetData
     {
-        public List<BudgetItem> Items       { get; set; } = new();
-        public decimal          BudgetLimit { get; set; } = 0;
+        public List<BudgetItem> Items { get; set; } = new();
+        public decimal BudgetLimit { get; set; } = 0;
     }
 
     public class BudgetService
     {
-        // Lưu trong thư mục project (cùng chỗ với tasks.json, vocab_1000.json)
-        private static readonly string SavePath = Path.Combine(
-            Directory.GetCurrentDirectory(), "budget.json");
+        private string filePath;
+
+        public BudgetService()
+        {
+            string oneDrive = Environment.GetEnvironmentVariable("OneDrive");
+
+            if (string.IsNullOrEmpty(oneDrive))
+            {
+                string userPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                oneDrive = Path.Combine(userPath, "OneDrive");
+            }
+
+            filePath = Path.Combine(oneDrive, "budget.json");
+
+            if (!File.Exists(filePath))
+            {
+                var emptyData = new BudgetData();
+                File.WriteAllText(filePath, JsonSerializer.Serialize(emptyData));
+            }
+        }
 
         public BudgetData Load()
         {
             try
             {
-                if (File.Exists(SavePath))
-                    return JsonSerializer.Deserialize<BudgetData>(File.ReadAllText(SavePath)) ?? new();
+                var json = File.ReadAllText(filePath);
+                return JsonSerializer.Deserialize<BudgetData>(json) ?? new BudgetData();
             }
-            catch { }
-            return new();
+            catch
+            {
+                return new BudgetData();
+            }
         }
 
         public void Save(List<BudgetItem> items, decimal budgetLimit)
         {
             try
             {
-                var data = new BudgetData { Items = items, BudgetLimit = budgetLimit };
-                File.WriteAllText(SavePath, JsonSerializer.Serialize(data,
-                    new JsonSerializerOptions { WriteIndented = true }));
+                var data = new BudgetData
+                {
+                    Items = items,
+                    BudgetLimit = budgetLimit
+                };
+
+                var json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText(filePath, json);
             }
             catch (Exception ex)
             {

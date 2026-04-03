@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
@@ -7,19 +8,36 @@ namespace DailyPlannerApp.Services
 {
     public class VocabService
     {
-        private readonly string _filePath = "vocab.json";
+        private string filePath;
+
+        public VocabService()
+        {
+            string oneDrive = Environment.GetEnvironmentVariable("OneDrive");
+
+            if (string.IsNullOrEmpty(oneDrive))
+            {
+                string userPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                oneDrive = Path.Combine(userPath, "OneDrive");
+            }
+
+            filePath = Path.Combine(oneDrive, "vocab.json");
+
+            if (!File.Exists(filePath))
+            {
+                File.WriteAllText(filePath, "[]");
+            }
+        }
 
         public List<VocabItem> Load()
         {
-            if (!File.Exists(_filePath)) return new List<VocabItem>();
-            var json = File.ReadAllText(_filePath);
+            var json = File.ReadAllText(filePath);
             return JsonSerializer.Deserialize<List<VocabItem>>(json) ?? new List<VocabItem>();
         }
 
         public void Save(List<VocabItem> items)
         {
             var json = JsonSerializer.Serialize(items, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(_filePath, json);
+            File.WriteAllText(filePath, json);
         }
     }
 }
