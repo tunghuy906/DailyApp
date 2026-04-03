@@ -125,7 +125,7 @@ namespace DailyPlannerApp
         void BuildUI()
         {
             Text = "Vocabulary Notebook";
-            Size = new Size(950, 590);
+            Size = new Size(1000, 590);
             StartPosition = FormStartPosition.CenterScreen;
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
@@ -450,7 +450,22 @@ namespace DailyPlannerApp
         }
 
         // ── Notes data ────────────────────────────────────────────────
-        void LoadAll() { _allItems = new BindingList<VocabItem>(_service.Load()); ApplyFilter(); }
+        void LoadAll()
+        {
+            _allItems = new BindingList<VocabItem>(_service.Load());
+            // Nếu file cũ chưa có STT thì gán lại và lưu luôn
+            bool needSave = _allItems.Any(v => v.Stt == 0);
+            if (needSave) RenumberAndSave();
+            ApplyFilter();
+        }
+
+        // Gán lại STT 1,2,3... cho toàn bộ _allItems rồi lưu JSON
+        void RenumberAndSave()
+        {
+            for (int i = 0; i < _allItems.Count; i++)
+                _allItems[i].Stt = i + 1;
+            _service.Save(_allItems.ToList());
+        }
 
         void ApplyFilter()
         {
@@ -464,21 +479,9 @@ namespace DailyPlannerApp
 
             _viewItems = new BindingList<VocabItem>(result);
 
-            if (grid.DataSource == null)
-            {
-                grid.DataSource = _viewItems;
-                SetupColumns();
-            }
-            else
-            {
-                grid.DataSource = _viewItems;
-            }
-
-            // === Gán số thứ tự tự động ===
-            for (int i = 0; i < grid.Rows.Count; i++)
-            {
-                grid.Rows[i].Cells["STT"].Value = (i + 1).ToString();
-            }
+            bool firstLoad = grid.DataSource == null;
+            grid.DataSource = _viewItems;
+            if (firstLoad) SetupColumns();
 
             lblCount.Text = string.Format("Total: {0} words   |   Showing: {1}",
                 _allItems.Count, _viewItems.Count);
@@ -488,13 +491,14 @@ namespace DailyPlannerApp
             foreach (DataGridViewColumn c in grid.Columns)
                 c.Visible = false;
 
-            // ==================== THÊM CỘT SỐ THỨ TỰ ====================
+            // ==================== CỘT SỐ THỨ TỰ (bind từ property Stt) ====================
             if (!grid.Columns.Contains("STT"))
             {
                 var sttColumn = new DataGridViewTextBoxColumn
                 {
                     Name = "STT",
                     HeaderText = "STT",
+                    DataPropertyName = "Stt",   // bind thẳng vào VocabItem.Stt
                     Width = 50,
                     DefaultCellStyle = new DataGridViewCellStyle
                     {
@@ -504,8 +508,12 @@ namespace DailyPlannerApp
                     ReadOnly = true,
                     Resizable = DataGridViewTriState.False
                 };
-                grid.Columns.Insert(0, sttColumn);   // Chèn vào cột đầu tiên
+                grid.Columns.Insert(0, sttColumn);
             }
+
+            // Cột STT
+            ShowCol("STT", "STT", 50);
+            grid.Columns["STT"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
             // Các cột cũ
             ShowCol("Word", "Word", 130);
@@ -567,7 +575,7 @@ namespace DailyPlannerApp
             }
 
             _allItems.Add(new VocabItem { Word = inputWord, Meaning = txtMeaning.Text.Trim(), Example = txtExample.Text.Trim(), AddedDate = DateTime.Now });
-            _service.Save(_allItems.ToList()); ApplyFilter(); ClearInputs();
+            RenumberAndSave(); ApplyFilter(); ClearInputs();
         }
 
         void BtnDelete_Click(object sender, EventArgs e)
@@ -575,7 +583,7 @@ namespace DailyPlannerApp
             var item = grid.CurrentRow?.DataBoundItem as VocabItem;
             if (item == null) return;
             if (MessageBox.Show(string.Format("Delete \"{0}\"?", item.Word), "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            { _allItems.Remove(item); _service.Save(_allItems.ToList()); ApplyFilter(); }
+            { _allItems.Remove(item); RenumberAndSave(); ApplyFilter(); }
         }
 
         void Grid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -618,7 +626,7 @@ namespace DailyPlannerApp
             if (popup.ShowDialog(this) == DialogResult.OK)
             {
                 item.Word = pWord.Text.Trim(); item.Meaning = pMeaning.Text.Trim(); item.Example = pExample.Text.Trim();
-                _service.Save(_allItems.ToList()); ApplyFilter();
+                RenumberAndSave(); ApplyFilter();
             }
         }
 

@@ -4,6 +4,7 @@ namespace DailyPlannerApp.Models
 {
     public class VocabItem
     {
+        public int Stt { get; set; }  
         public string Word { get; set; } = "";
         public string Phonetic { get; set; } = "";   // Phiên âm
         public string Meaning { get; set; } = "";    // Nghĩa tiếng Việt

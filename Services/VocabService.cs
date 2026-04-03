@@ -10,6 +10,16 @@ namespace DailyPlannerApp.Services
     {
         private string filePath;
 
+        private static readonly JsonSerializerOptions _readOpts = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+
+        private static readonly JsonSerializerOptions _writeOpts = new JsonSerializerOptions
+        {
+            WriteIndented = true
+        };
+
         public VocabService()
         {
             string oneDrive = Environment.GetEnvironmentVariable("OneDrive");
@@ -31,12 +41,12 @@ namespace DailyPlannerApp.Services
         public List<VocabItem> Load()
         {
             var json = File.ReadAllText(filePath);
-            return JsonSerializer.Deserialize<List<VocabItem>>(json) ?? new List<VocabItem>();
+            return JsonSerializer.Deserialize<List<VocabItem>>(json, _readOpts) ?? new List<VocabItem>();
         }
 
         public void Save(List<VocabItem> items)
         {
-            var json = JsonSerializer.Serialize(items, new JsonSerializerOptions { WriteIndented = true });
+            var json = JsonSerializer.Serialize(items, _writeOpts);
             File.WriteAllText(filePath, json);
         }
     }

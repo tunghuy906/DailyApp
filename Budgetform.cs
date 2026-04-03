@@ -26,7 +26,7 @@ namespace DailyPlannerApp
         // ── Palette ────────────────────────────────────────────────────
         static readonly Color C_BG      = Color.FromArgb(245, 246, 250);
         static readonly Color C_SIDEBAR = Color.FromArgb(255, 255, 255);
-        static readonly Color C_HEADER  = Color.DarkGreen;
+        static readonly Color C_HEADER  = Color.FromArgb(255, 255, 215, 0);
         static readonly Color C_ACCENT  = Color.FromArgb(59,  130, 246);
         static readonly Color C_DANGER  = Color.FromArgb(220, 38,  38);
         static readonly Color C_TEXT    = Color.FromArgb(30,  41,  59);
@@ -84,7 +84,7 @@ namespace DailyPlannerApp
             var lblTitle = new Label
             {
                 Text      = "💰  Monthly Budget Tracker",
-                ForeColor = Color.White,
+                ForeColor = Color.FromArgb(0, 0, 128),
                 Font      = new Font("Segoe UI", 15, FontStyle.Bold),
                 Dock      = DockStyle.Left,
                 Width     = 360,
