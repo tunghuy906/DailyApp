@@ -16,6 +16,7 @@ namespace DailyPlannerApp
         public string   Category { get; set; } = "Other";
         public string   Note     { get; set; } = "";
         public DateTime Date     { get; set; } = DateTime.Today;
+        public bool     IsPaid   { get; set; } = false;   // ← checkbox gạch dòng
     }
 
     // ══════════════════════════════════════════════════════════════════════
@@ -186,7 +187,7 @@ namespace DailyPlannerApp
                 ColumnHeadersHeight         = 38,
                 RowTemplate                 = { Height = 34 },
                 CellBorderStyle             = DataGridViewCellBorderStyle.SingleHorizontal,
-                ReadOnly                    = true
+                ReadOnly                    = false
             };
 
             grid.ColumnHeadersDefaultCellStyle.BackColor  = Color.FromArgb(37, 99, 235);
@@ -204,11 +205,19 @@ namespace DailyPlannerApp
             grid.AlternatingRowsDefaultCellStyle.BackColor = C_ROW_ALT;
 
             // Fixed-width columns (no stretch)
-            grid.Columns.Add(new DataGridViewTextBoxColumn { Name = "colDate",     HeaderText = "Date",        Width = 100 });
-            grid.Columns.Add(new DataGridViewTextBoxColumn { Name = "colTask",     HeaderText = "Task",        Width = 200 });
-            grid.Columns.Add(new DataGridViewTextBoxColumn { Name = "colCategory", HeaderText = "Category",    Width = 110 });
-            grid.Columns.Add(new DataGridViewTextBoxColumn { Name = "colAmount",   HeaderText = "Amount (₫)",  Width = 130 });
-            grid.Columns.Add(new DataGridViewTextBoxColumn { Name = "colNote",     HeaderText = "Note",        Width = 220 });
+            var chkCol = new DataGridViewCheckBoxColumn
+            {
+                Name = "colPaid", HeaderText = "✓", Width = 36,
+                FalseValue = false, TrueValue = true,
+                ReadOnly = false
+            };
+            chkCol.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            grid.Columns.Add(chkCol);
+            grid.Columns.Add(new DataGridViewTextBoxColumn { Name = "colDate",     HeaderText = "Date",        Width = 100, ReadOnly = true });
+            grid.Columns.Add(new DataGridViewTextBoxColumn { Name = "colTask",     HeaderText = "Task",        Width = 200, ReadOnly = true });
+            grid.Columns.Add(new DataGridViewTextBoxColumn { Name = "colCategory", HeaderText = "Category",    Width = 110, ReadOnly = true });
+            grid.Columns.Add(new DataGridViewTextBoxColumn { Name = "colAmount",   HeaderText = "Amount (₫)",  Width = 130, ReadOnly = true });
+            grid.Columns.Add(new DataGridViewTextBoxColumn { Name = "colNote",     HeaderText = "Note",        Width = 220, ReadOnly = true });
 
             // Last column fills remaining space but is still not user-resizable
             grid.Columns["colNote"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -216,6 +225,26 @@ namespace DailyPlannerApp
             foreach (DataGridViewColumn col in grid.Columns)
                 col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
             grid.Columns["colAmount"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            grid.Columns["colPaid"].DefaultCellStyle.Alignment   = DataGridViewContentAlignment.MiddleCenter;
+
+            // ── Checkbox ticked → gạch dòng & lưu ────────────────────
+            grid.CellValueChanged += (s, e) =>
+            {
+                if (e.RowIndex < 0) return;
+                if (grid.Columns[e.ColumnIndex].Name != "colPaid") return;
+                var filtered = GetFilteredItems();
+                if (e.RowIndex >= filtered.Count) return;
+                bool paid = (bool)(grid.Rows[e.RowIndex].Cells["colPaid"].Value ?? false);
+                filtered[e.RowIndex].IsPaid = paid;
+                ApplyRowStrikethrough(e.RowIndex, paid);
+                service.Save(items, budgetLimit);
+            };
+            // Commit checkbox ngay khi click (không cần rời ô)
+            grid.CurrentCellDirtyStateChanged += (s, e) =>
+            {
+                if (grid.CurrentCell is DataGridViewCheckBoxCell)
+                    grid.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            };
 
             // ── Click on Amount cell → show detail popup ───────────────
             grid.CellClick += (s, e) =>
@@ -404,7 +433,7 @@ namespace DailyPlannerApp
             using var popup = new Form
             {
                 Text            = "Expense Detail",
-                Size            = new Size(420, 320),
+                Size            = new Size(420, 350),
                 StartPosition   = FormStartPosition.CenterParent,
                 FormBorderStyle = FormBorderStyle.FixedDialog,
                 MaximizeBox     = false, MinimizeBox = false,
@@ -488,6 +517,85 @@ namespace DailyPlannerApp
             popup.Controls.Add(txtNoteDetail);
             iy += 70;
 
+            // ── Edit Amount button ─────────────────────────────────────
+            var btnEditAmt = new Button
+            {
+                Text = "✏  Edit Amount", Left = 24, Top = iy + 8, Width = 140, Height = 32,
+                Font = new Font("Segoe UI", 9.5f, FontStyle.Bold),
+                BackColor = Color.FromArgb(239, 246, 255), ForeColor = C_ACCENT,
+                FlatStyle = FlatStyle.Flat, Cursor = Cursors.Hand
+            };
+            btnEditAmt.FlatAppearance.BorderSize  = 1;
+            btnEditAmt.FlatAppearance.BorderColor = Color.FromArgb(147, 197, 253);
+            btnEditAmt.Click += (s, e) =>
+            {
+                using var dlg = new Form
+                {
+                    Text            = "✏ Edit Amount",
+                    Size            = new Size(320, 160),
+                    StartPosition   = FormStartPosition.CenterParent,
+                    FormBorderStyle = FormBorderStyle.FixedDialog,
+                    MaximizeBox     = false, MinimizeBox = false,
+                    BackColor       = Color.White
+                };
+                var dbar = new Panel { Dock = DockStyle.Top, Height = 4, BackColor = C_ACCENT };
+                dlg.Controls.Add(dbar);
+                dlg.Controls.Add(new Label
+                {
+                    Text = $"New amount for: {item.Task}",
+                    Left = 16, Top = 16, Width = 280, Height = 20,
+                    Font = new Font("Segoe UI", 9), ForeColor = C_SUBTEXT
+                });
+                var txtNew = new TextBox
+                {
+                    Left = 16, Top = 42, Width = 180, Height = 26,
+                    Font = new Font("Segoe UI", 11, FontStyle.Bold),
+                    Text = item.Amount.ToString("N0").Replace(",", ""),
+                    BorderStyle = BorderStyle.FixedSingle,
+                    BackColor = Color.FromArgb(239, 246, 255), ForeColor = C_TEXT
+                };
+                txtNew.SelectAll();
+                dlg.Controls.Add(txtNew);
+                dlg.Controls.Add(new Label
+                {
+                    Text = "₫", Left = 202, Top = 46, Width = 20, Height = 20,
+                    Font = new Font("Segoe UI", 11, FontStyle.Bold), ForeColor = C_SUBTEXT
+                });
+                var btnOk = new Button
+                {
+                    Text = "Save", Left = 16, Top = 80, Width = 88, Height = 30,
+                    Font = new Font("Segoe UI", 9.5f, FontStyle.Bold),
+                    BackColor = Color.FromArgb(240, 253, 244), ForeColor = C_GREEN,
+                    FlatStyle = FlatStyle.Flat, Cursor = Cursors.Hand, DialogResult = DialogResult.OK
+                };
+                btnOk.FlatAppearance.BorderColor = Color.FromArgb(187, 247, 208);
+                dlg.Controls.Add(btnOk);
+                var btnCancel = new Button
+                {
+                    Text = "Cancel", Left = 112, Top = 80, Width = 88, Height = 30,
+                    Font = new Font("Segoe UI", 9.5f),
+                    FlatStyle = FlatStyle.Flat, Cursor = Cursors.Hand, DialogResult = DialogResult.Cancel
+                };
+                dlg.Controls.Add(btnCancel);
+                dlg.AcceptButton = btnOk;
+                dlg.CancelButton = btnCancel;
+
+                if (dlg.ShowDialog(popup) == DialogResult.OK)
+                {
+                    string raw = txtNew.Text.Replace(",", "").Replace(".", "").Trim();
+                    if (!decimal.TryParse(raw, out decimal newAmt) || newAmt < 0)
+                    {
+                        MessageBox.Show("Invalid amount.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    item.Amount      = newAmt;
+                    lblAmount.Text   = newAmt.ToString("N0") + " ₫";   // cập nhật ngay trong popup
+                    service.Save(items, budgetLimit);
+                    RefreshGrid();
+                }
+            };
+            popup.Controls.Add(btnEditAmt);
+
             // Close button
             var btnClose = new Button
             {
@@ -567,9 +675,11 @@ namespace DailyPlannerApp
             var filtered = GetFilteredItems();
             grid.Rows.Clear();
 
-            foreach (var item in filtered)
+            for (int i = 0; i < filtered.Count; i++)
             {
+                var item = filtered[i];
                 int row = grid.Rows.Add(
+                    item.IsPaid,
                     item.Date.ToString("dd/MM/yyyy"),
                     item.Task,
                     item.Category,
@@ -583,9 +693,33 @@ namespace DailyPlannerApp
                 // Underline + blue the Amount cell as a clickable hint
                 grid.Rows[row].Cells["colAmount"].Style.ForeColor = C_ACCENT;
                 grid.Rows[row].Cells["colAmount"].Style.Font      = new Font("Segoe UI", 10, FontStyle.Underline);
+
+                // Gạch ngang nếu đã tích
+                if (item.IsPaid)
+                    ApplyRowStrikethrough(row, true);
             }
 
             RefreshSummary(filtered);
+        }
+
+        void ApplyRowStrikethrough(int rowIndex, bool strike)
+        {
+            if (rowIndex < 0 || rowIndex >= grid.Rows.Count) return;
+            var row = grid.Rows[rowIndex];
+            var baseFont   = new Font("Segoe UI", 10, strike ? FontStyle.Strikeout : FontStyle.Regular);
+            var amountFont = new Font("Segoe UI", 10, strike ? FontStyle.Strikeout | FontStyle.Underline : FontStyle.Underline);
+
+            foreach (DataGridViewCell cell in row.Cells)
+            {
+                if (grid.Columns[cell.ColumnIndex].Name == "colPaid") continue;
+                if (grid.Columns[cell.ColumnIndex].Name == "colAmount")
+                    cell.Style.Font = amountFont;
+                else
+                    cell.Style.Font = baseFont;
+                cell.Style.ForeColor = strike ? C_SUBTEXT : C_TEXT;
+            }
+            // Keep Amount color
+            row.Cells["colAmount"].Style.ForeColor = strike ? C_SUBTEXT : C_ACCENT;
         }
 
         void RefreshSummary(List<BudgetItem> filtered)
@@ -605,6 +739,86 @@ namespace DailyPlannerApp
             {
                 lblBudgetLeft.Text      = "Budget: not set";
                 lblBudgetLeft.ForeColor = C_SUBTEXT;
+            }
+        }
+
+        // ══════════════════════════════════════════════════════════════
+        //  EDIT AMOUNT POPUP
+        // ══════════════════════════════════════════════════════════════
+        void EditAmount(int rowIndex)
+        {
+            var filtered = GetFilteredItems();
+            if (rowIndex < 0 || rowIndex >= filtered.Count) return;
+            var item = filtered[rowIndex];
+
+            using var dlg = new Form
+            {
+                Text            = "✏ Edit Amount",
+                Size            = new Size(320, 160),
+                StartPosition   = FormStartPosition.CenterParent,
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                MaximizeBox     = false, MinimizeBox = false,
+                BackColor       = Color.White
+            };
+
+            var bar = new Panel { Dock = DockStyle.Top, Height = 4, BackColor = C_ACCENT };
+            dlg.Controls.Add(bar);
+
+            dlg.Controls.Add(new Label
+            {
+                Text = $"New amount for: {item.Task}",
+                Left = 16, Top = 16, Width = 280, Height = 20,
+                Font = new Font("Segoe UI", 9), ForeColor = C_SUBTEXT
+            });
+
+            var txtNew = new TextBox
+            {
+                Left = 16, Top = 42, Width = 180, Height = 26,
+                Font = new Font("Segoe UI", 11, FontStyle.Bold),
+                Text = item.Amount.ToString("N0").Replace(",", ""),
+                BorderStyle = BorderStyle.FixedSingle,
+                BackColor = Color.FromArgb(239, 246, 255), ForeColor = C_TEXT
+            };
+            txtNew.SelectAll();
+            dlg.Controls.Add(txtNew);
+
+            dlg.Controls.Add(new Label
+            {
+                Text = "₫", Left = 202, Top = 46, Width = 20, Height = 20,
+                Font = new Font("Segoe UI", 11, FontStyle.Bold), ForeColor = C_SUBTEXT
+            });
+
+            var btnOk = new Button
+            {
+                Text = "Save", Left = 16, Top = 80, Width = 88, Height = 30,
+                Font = new Font("Segoe UI", 9.5f, FontStyle.Bold),
+                BackColor = Color.FromArgb(240, 253, 244), ForeColor = C_GREEN,
+                FlatStyle = FlatStyle.Flat, Cursor = Cursors.Hand, DialogResult = DialogResult.OK
+            };
+            btnOk.FlatAppearance.BorderColor = Color.FromArgb(187, 247, 208);
+            dlg.Controls.Add(btnOk);
+
+            var btnCancel = new Button
+            {
+                Text = "Cancel", Left = 112, Top = 80, Width = 88, Height = 30,
+                Font = new Font("Segoe UI", 9.5f),
+                FlatStyle = FlatStyle.Flat, Cursor = Cursors.Hand, DialogResult = DialogResult.Cancel
+            };
+            dlg.Controls.Add(btnCancel);
+            dlg.AcceptButton = btnOk;
+            dlg.CancelButton = btnCancel;
+
+            if (dlg.ShowDialog(this) == DialogResult.OK)
+            {
+                string raw = txtNew.Text.Replace(",", "").Replace(".", "").Trim();
+                if (!decimal.TryParse(raw, out decimal newAmt) || newAmt < 0)
+                {
+                    MessageBox.Show("Invalid amount.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                item.Amount = newAmt;
+                service.Save(items, budgetLimit);
+                RefreshGrid();
             }
         }
 

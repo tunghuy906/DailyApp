@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DailyPlannerApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4af8c763b908a38acba54e4df21779dcaa4e7313")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9700cc75589895ed720a8f90b3504cf0ee3ca1aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("DailyPlannerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DailyPlannerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

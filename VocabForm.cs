@@ -557,6 +557,35 @@ namespace DailyPlannerApp
             if (string.IsNullOrWhiteSpace(txtMeaning.Text)) { Warn("Please enter the meaning."); return; }
 
             string inputWord = txtWord.Text.Trim();
+
+            // ── Kiểm tra từ đã tồn tại trong vocab.json chưa ────────────
+            if (_service.Exists(_allItems.ToList(), inputWord))
+            {
+                var existing = _allItems.First(v => string.Equals(v.Word.Trim(), inputWord, StringComparison.OrdinalIgnoreCase));
+                MessageBox.Show(
+                    string.Format("Từ \"{0}\" đã có trong danh sách!\n\nNghĩa: {1}\nVí dụ: {2}",
+                        existing.Word, existing.Meaning,
+                        string.IsNullOrWhiteSpace(existing.Example) ? "(chưa có)" : existing.Example),
+                    "Từ đã tồn tại",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                // Highlight từ đó trong grid
+                var match = _viewItems.FirstOrDefault(v =>
+                    string.Equals(v.Word.Trim(), inputWord, StringComparison.OrdinalIgnoreCase));
+                if (match != null)
+                {
+                    int idx = _viewItems.IndexOf(match);
+                    if (idx >= 0 && idx < grid.Rows.Count)
+                    {
+                        grid.ClearSelection();
+                        grid.Rows[idx].Selected = true;
+                        grid.FirstDisplayedScrollingRowIndex = idx;
+                    }
+                }
+                return;
+            }
+            // ─────────────────────────────────────────────────────────────
             var master = _master.FirstOrDefault(m => string.Equals(m.Word, inputWord, StringComparison.OrdinalIgnoreCase));
             if (master != null)
             {

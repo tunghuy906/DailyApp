@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using DailyPlannerApp.Models;
 
@@ -48,6 +49,14 @@ namespace DailyPlannerApp.Services
         {
             var json = JsonSerializer.Serialize(items, _writeOpts);
             File.WriteAllText(filePath, json);
+        }
+
+        /// <summary>
+        /// Kiểm tra xem một từ đã tồn tại trong danh sách chưa (không phân biệt hoa thường).
+        /// </summary>
+        public bool Exists(List<VocabItem> items, string word)
+        {
+            return items.Any(v => string.Equals(v.Word.Trim(), word.Trim(), StringComparison.OrdinalIgnoreCase));
         }
     }
 }

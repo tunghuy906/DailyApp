@@ -33,7 +33,9 @@ namespace DailyPlannerApp
         Timer            timer;
         NotifyIcon       notify;
         DateTimePicker   dtStart;
+        DateTimePicker   dtStartTime;
         DateTimePicker   dtDeadline;
+        DateTimePicker   dtDeadlineTime;
         Label            lblClock;
         Timer            clockTimer;
 
@@ -220,12 +222,44 @@ namespace DailyPlannerApp
             sidebar.Controls.Add(txtDescription); y += 110;
 
             sidebar.Controls.Add(SidebarFieldLabel("Start time", y)); y += 20;
-            dtStart = SidebarDatePicker(y);
-            sidebar.Controls.Add(dtStart); y += 32;
+            dtStart = new DateTimePicker
+            {
+                Left = 10, Top = y, Width = 120,
+                Format       = DateTimePickerFormat.Custom,
+                CustomFormat = "dd/MM/yyyy",
+                ShowUpDown   = false,
+                Font         = new Font("Segoe UI", 9.5f)
+            };
+            dtStartTime = new DateTimePicker
+            {
+                Left = 136, Top = y, Width = 82,
+                Format       = DateTimePickerFormat.Custom,
+                CustomFormat = "HH:mm",
+                ShowUpDown   = true,
+                Font         = new Font("Segoe UI", 9.5f)
+            };
+            sidebar.Controls.Add(dtStart);
+            sidebar.Controls.Add(dtStartTime); y += 34;
 
             sidebar.Controls.Add(SidebarFieldLabel("Deadline", y)); y += 20;
-            dtDeadline = SidebarDatePicker(y);
-            sidebar.Controls.Add(dtDeadline); y += 38;
+            dtDeadline = new DateTimePicker
+            {
+                Left = 10, Top = y, Width = 120,
+                Format       = DateTimePickerFormat.Custom,
+                CustomFormat = "dd/MM/yyyy",
+                ShowUpDown   = false,
+                Font         = new Font("Segoe UI", 9.5f)
+            };
+            dtDeadlineTime = new DateTimePicker
+            {
+                Left = 136, Top = y, Width = 82,
+                Format       = DateTimePickerFormat.Custom,
+                CustomFormat = "HH:mm",
+                ShowUpDown   = true,
+                Font         = new Font("Segoe UI", 9.5f)
+            };
+            sidebar.Controls.Add(dtDeadline);
+            sidebar.Controls.Add(dtDeadlineTime); y += 38;
 
             // ── Row 1: Add + Delete side by side ──────────────────────
             btnAdd = new Button
@@ -264,7 +298,14 @@ namespace DailyPlannerApp
             btnDelete.Click += (s, e) =>
             {
                 var task = grid.CurrentRow?.DataBoundItem as TaskItem;
-                if (task != null)
+                if (task == null)
+                {
+                    MessageBox.Show("Vui lòng chọn task trước khi xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                var result = MessageBox.Show($"Bạn có chắc muốn xóa task '{task.Title}' không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
                 {
                     tasks.Remove(task);
                     service.Save(tasks.ToList());
@@ -440,8 +481,8 @@ namespace DailyPlannerApp
                 IsDone      = false,
                 Title       = txtTitle.Text.Trim(),
                 Description = txtDescription.Text,
-                StartTime   = dtStart.Value,
-                Deadline    = dtDeadline.Value,
+                StartTime   = dtStart.Value.Date + dtStartTime.Value.TimeOfDay,
+                Deadline    = dtDeadline.Value.Date + dtDeadlineTime.Value.TimeOfDay,
                 SubTasks    = subTasks,
                 SubTaskDone = subTasks.Select(_ => false).ToList()
             });
@@ -697,8 +738,8 @@ namespace DailyPlannerApp
                     BorderStyle = BorderStyle.FixedSingle,
                     Text        = task.Description ?? ""
                 };
-                var btnSave2      = MakePopupButton("💾  Save",   Color.FromArgb(22, 163, 74),   236, 290, 130);
-                var btnCancelEdit = MakePopupButton("✖  Cancel", Color.FromArgb(107, 114, 128), 140, 290, 100);
+                var btnSave2      = MakePopupButton("💾  Save",   Color.FromArgb(22, 163, 74),   250, 240, 130);
+                var btnCancelEdit = MakePopupButton("✖  Cancel", Color.FromArgb(107, 114, 128), 130, 240, 100);
 
                 btnSave2.Click += (ss, eee) =>
                 {
@@ -762,6 +803,114 @@ namespace DailyPlannerApp
             infoPanel.Controls.Add(lblStartInfo);
             infoPanel.Controls.Add(lblDeadlineInfo);
             detailForm.Controls.Add(infoPanel);
+
+            // ── Edit Time button ───────────────────────────────────────
+            var btnEditTime = new Button
+            {
+                Text      = "🕐  Edit Time",
+                Left      = 182,
+                Top       = 410,
+                Width     = 150,
+                Height    = 32,
+                Font      = new Font("Segoe UI", 9, FontStyle.Bold),
+                BackColor = Color.FromArgb(239, 246, 255),
+                ForeColor = Color.FromArgb(37, 99, 235),
+                FlatStyle = FlatStyle.Flat,
+                Cursor    = Cursors.Hand
+            };
+            btnEditTime.FlatAppearance.BorderSize  = 1;
+            btnEditTime.FlatAppearance.BorderColor = Color.FromArgb(147, 197, 253);
+            btnEditTime.Click += (s, ev) =>
+            {
+                using var timeForm = new Form
+                {
+                    Text            = "Edit Time",
+                    Size            = new Size(400, 260),
+                    StartPosition   = FormStartPosition.CenterParent,
+                    FormBorderStyle = FormBorderStyle.FixedDialog,
+                    MaximizeBox     = false,
+                    MinimizeBox     = false,
+                    BackColor       = Color.White
+                };
+
+                // ── Start row ─────────────────────────────────────────
+                timeForm.Controls.Add(new Label
+                {
+                    Text = "🟢  Start", Left = 20, Top = 20, Width = 80,
+                    Font = new Font("Segoe UI", 10, FontStyle.Bold), ForeColor = C_TEXT,
+                    TextAlign = ContentAlignment.MiddleLeft, Height = 28
+                });
+                var edtStartDate = new DateTimePicker
+                {
+                    Left = 105, Top = 20, Width = 130,
+                    Format = DateTimePickerFormat.Custom, CustomFormat = "dd/MM/yyyy",
+                    Value = task.StartTime, Font = new Font("Segoe UI", 9.5f)
+                };
+                var edtStartTime = new DateTimePicker
+                {
+                    Left = 242, Top = 20, Width = 90,
+                    Format = DateTimePickerFormat.Custom, CustomFormat = "HH:mm",
+                    ShowUpDown = true, Value = task.StartTime, Font = new Font("Segoe UI", 9.5f)
+                };
+                timeForm.Controls.Add(edtStartDate);
+                timeForm.Controls.Add(edtStartTime);
+
+                // ── Deadline row ───────────────────────────────────────
+                timeForm.Controls.Add(new Label
+                {
+                    Text = "🔴  End", Left = 20, Top = 72, Width = 80,
+                    Font = new Font("Segoe UI", 10, FontStyle.Bold), ForeColor = C_TEXT,
+                    TextAlign = ContentAlignment.MiddleLeft, Height = 28
+                });
+                var edtDeadlineDate = new DateTimePicker
+                {
+                    Left = 105, Top = 72, Width = 130,
+                    Format = DateTimePickerFormat.Custom, CustomFormat = "dd/MM/yyyy",
+                    Value = task.Deadline, Font = new Font("Segoe UI", 9.5f)
+                };
+                var edtDeadlineTime = new DateTimePicker
+                {
+                    Left = 242, Top = 72, Width = 90,
+                    Format = DateTimePickerFormat.Custom, CustomFormat = "HH:mm",
+                    ShowUpDown = true, Value = task.Deadline, Font = new Font("Segoe UI", 9.5f)
+                };
+                timeForm.Controls.Add(edtDeadlineDate);
+                timeForm.Controls.Add(edtDeadlineTime);
+
+                // divider
+                timeForm.Controls.Add(new Panel { Left = 20, Top = 118, Width = 344, Height = 1, BackColor = C_BORDER });
+
+                var btnSaveTime   = MakePopupButton("💾  Save",   Color.FromArgb(22, 163, 74),   200, 138, 130);
+                var btnCancelTime = MakePopupButton("✖  Cancel", Color.FromArgb(107, 114, 128),  60, 138, 100);
+
+                btnSaveTime.Click += (ss, eee) =>
+                {
+                    var newStart    = edtStartDate.Value.Date    + edtStartTime.Value.TimeOfDay;
+                    var newDeadline = edtDeadlineDate.Value.Date + edtDeadlineTime.Value.TimeOfDay;
+
+                    if (newDeadline <= newStart)
+                    {
+                        MessageBox.Show("Deadline phải sau Start time.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    task.StartTime = newStart;
+                    task.Deadline  = newDeadline;
+                    service.Save(tasks.ToList());
+                    grid.Refresh();
+
+                    lblStartInfo.Text    = $"🟢  Start:     {task.StartTime:dd/MM/yyyy  HH:mm}";
+                    lblDeadlineInfo.Text = $"🔴  Deadline:  {task.Deadline:dd/MM/yyyy  HH:mm}";
+
+                    timeForm.Close();
+                };
+                btnCancelTime.Click += (ss, eee) => timeForm.Close();
+
+                timeForm.Controls.Add(btnSaveTime);
+                timeForm.Controls.Add(btnCancelTime);
+                timeForm.ShowDialog();
+            };
+            detailForm.Controls.Add(btnEditTime);
 
             var btnClose = MakePopupButton("✖  Close", C_ACCENT, 390, 410, 120);
             btnClose.Click += (s, ev) => detailForm.Close();
