@@ -16,21 +16,6 @@ D:\DailyApp\DailyApp\obj\Debug\net8.0-windows\ref\DailyPlannerApp.dll
 <<<<<<< HEAD
 =======
 >>>>>>> c7c61501ebfcac497336f3ade6a65f2bee782d42
-D:\DailyApp\bin\Debug\net8.0-windows\DailyPlannerApp.exe
-D:\DailyApp\bin\Debug\net8.0-windows\DailyPlannerApp.deps.json
-D:\DailyApp\bin\Debug\net8.0-windows\DailyPlannerApp.runtimeconfig.json
-D:\DailyApp\bin\Debug\net8.0-windows\DailyPlannerApp.dll
-D:\DailyApp\bin\Debug\net8.0-windows\DailyPlannerApp.pdb
-D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.GeneratedMSBuildEditorConfig.editorconfig
-D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.AssemblyInfoInputs.cache
-D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.AssemblyInfo.cs
-D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.csproj.CoreCompileInputs.cache
-D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.sourcelink.json
-D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.dll
-D:\DailyApp\obj\Debug\net8.0-windows\refint\DailyPlannerApp.dll
-D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.pdb
-D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.genruntimeconfig.cache
-D:\DailyApp\obj\Debug\net8.0-windows\ref\DailyPlannerApp.dll
 E:\DailyApp\DailyPlannerApp\bin\Debug\net8.0-windows\DailyPlannerApp.exe
 E:\DailyApp\DailyPlannerApp\bin\Debug\net8.0-windows\DailyPlannerApp.deps.json
 E:\DailyApp\DailyPlannerApp\bin\Debug\net8.0-windows\DailyPlannerApp.runtimeconfig.json
@@ -46,3 +31,18 @@ E:\DailyApp\DailyPlannerApp\obj\Debug\net8.0-windows\refint\DailyPlannerApp.dll
 E:\DailyApp\DailyPlannerApp\obj\Debug\net8.0-windows\DailyPlannerApp.pdb
 E:\DailyApp\DailyPlannerApp\obj\Debug\net8.0-windows\DailyPlannerApp.genruntimeconfig.cache
 E:\DailyApp\DailyPlannerApp\obj\Debug\net8.0-windows\ref\DailyPlannerApp.dll
+D:\DailyApp\bin\Debug\net8.0-windows\DailyPlannerApp.exe
+D:\DailyApp\bin\Debug\net8.0-windows\DailyPlannerApp.deps.json
+D:\DailyApp\bin\Debug\net8.0-windows\DailyPlannerApp.runtimeconfig.json
+D:\DailyApp\bin\Debug\net8.0-windows\DailyPlannerApp.dll
+D:\DailyApp\bin\Debug\net8.0-windows\DailyPlannerApp.pdb
+D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.AssemblyInfoInputs.cache
+D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.AssemblyInfo.cs
+D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.csproj.CoreCompileInputs.cache
+D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.sourcelink.json
+D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.dll
+D:\DailyApp\obj\Debug\net8.0-windows\refint\DailyPlannerApp.dll
+D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.pdb
+D:\DailyApp\obj\Debug\net8.0-windows\DailyPlannerApp.genruntimeconfig.cache
+D:\DailyApp\obj\Debug\net8.0-windows\ref\DailyPlannerApp.dll
